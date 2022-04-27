@@ -1,0 +1,230 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div id="ServicesModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content" id='ServicesModalContent'>
+
+        </div>
+    </div>
+</div>
+
+<div id="ServicesModalDelete" class="modal fade">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content" id='ServicesModalDeleteContent'>
+
+        </div>
+    </div>
+</div>
+
+
+<h3 style="text-align:center;">Объем нефти резервуарах на дату последней инвентаризации (м<sup><small>3</small></sup>)</h3>
+
+<hr>
+<style type="text/css">
+    TH {
+        background: #EFF5FB; /* Цвет фона */
+        border-bottom: double;
+    }
+
+    tr:nth-child(odd) {
+        background: #EFF5FB; /* Цвет фона */
+    }
+
+    tr:nth-child(even) {
+        background: #ffffff; /* Цвет фона */
+    }
+</style>
+
+<div>
+    <table class="table">
+        <tr>
+            <td width="2">
+            </td>
+            <td width="12" style="text-align:center;">
+                Гомель
+            </td>
+            <td width="12" style="text-align: center;">
+                Защебье
+            </td>
+            <td width="12" style="text-align: center;">
+                Туров
+            </td>
+            <td width="12" style="text-align: center;">
+                Мозырь
+            </td>
+            <td width="12" style="text-align: center;">
+                Пинск
+            </td>
+            <td width="12" style="text-align: center;">
+                Кобрин
+            </td>
+            <td width="12" style="text-align: center;">
+                Новополоцк
+            </td>
+            <td width="12" style="text-align: center;">
+                Горки
+            </td>
+            <td width="2" style="text-align: center;">
+            </td>
+        </tr>
+        <tr>
+            <td width="2">
+            </td>
+            <td width="12" style="text-align:center;">
+               @{ 
+                    if (ViewBag.DateGomel == null)
+                    {
+                        ViewBag.DateGomel = null;
+                    }
+                    else
+                    { ViewBag.DateGomel = ViewBag.DateGomel.ToShortDateString(); }
+                }
+                @ViewBag.DateGomel 
+            </td>
+
+            <td width="12" style="text-align: center;">
+                @{
+                    if (ViewBag.DateZasch == null)
+                    {
+                        ViewBag.DateZasch = null;
+                    }
+                    else
+                    { ViewBag.DateZasch = ViewBag.DateZasch.ToShortDateString(); }
+                }
+                @ViewBag.DateZasch
+            </td>
+
+            <td width="12" style="text-align: center;">
+                @{
+            if (ViewBag.DateTur == null)
+            {
+                ViewBag.DateTur = null;
+            }
+            else
+            { ViewBag.DateTur = ViewBag.DateTur.ToShortDateString(); }
+        }
+        @ViewBag.DateTur                              
+
+            </td>
+
+            <td width="12" style="text-align: center;">
+                @{
+                    if (ViewBag.DateMoz == null)
+                    {
+                        ViewBag.DateMoz = null;
+                    }
+                    else
+                    { ViewBag.DateMoz = ViewBag.DateMoz.ToShortDateString(); }
+                }
+                @ViewBag.DateMoz
+            </td>
+
+            <td width="12" style="text-align: center;">
+                @{
+                    if (ViewBag.DatePin == null)
+                    {
+                        ViewBag.DatePin = null;
+                    }
+                    else
+                    { ViewBag.DatePin = ViewBag.DatePin.ToShortDateString(); }
+                }
+                @ViewBag.DatePin
+            </td>
+
+            <td width="12" style="text-align: center;">
+                @{
+                    if (ViewBag.DateKob == null)
+                    {
+                        ViewBag.DateKob = null;
+                    }
+                    else
+                    { ViewBag.DateKob = ViewBag.DateKob.ToShortDateString(); }
+                }
+                @ViewBag.DateKob
+            </td>
+
+            <td width="12" style="text-align: center;">
+                @{
+                    if (ViewBag.DateNovop == null)
+                    {
+                        ViewBag.DateNovop = null;
+                    }
+                    else
+                    { ViewBag.DateNovop = ViewBag.DateNovop.ToShortDateString(); }
+                }
+                @ViewBag.DateNovop
+            </td>
+
+            <td width="12" style="text-align: center;">
+                @{
+                    if (ViewBag.DateGorki == null)
+                    {
+                        ViewBag.DateGorki = null;
+                    }
+                    else
+                    { ViewBag.DateGorki = ViewBag.DateGorki.ToShortDateString(); }
+                }
+                @ViewBag.DateGorki
+            </td>
+
+            <td width="2" style="text-align: center;">
+            </td>
+        </tr>
+
+        <tr>
+            <td width="2">
+            </td>
+            <td width="12">
+                <input type="text" readonly style="width:100%;" class="form-control btn-block" id="vgom" value="@ViewBag.VGomel">
+            </td>
+            <td width="12">
+                <input type="text" readonly style="width:100%;" class="form-control btn-block" id="vzas" value="@ViewBag.VZasch">
+            </td>
+            <td width="12">
+                <input type="text" readonly style="width:100%;" class="form-control btn-block" id="vtur" value="@ViewBag.VTur">
+            </td>
+            <td width="12">
+                <input type="text" readonly style="width:100%;" class="form-control btn-block" id="vmoz" value="@ViewBag.VMoz">
+            </td>            
+            <td width="12">
+                <input type="text" readonly style="width:100%;" class="form-control btn-block" id="vpin" value="@ViewBag.VPin">
+            </td>
+            <td width="12">
+                <input type="text" readonly style="width:100%;" class="form-control btn-block" id="vkob" value="@ViewBag.VKob">
+            </td>
+            <td width="12">
+                <input type="text" readonly style="width:100%;" class="form-control btn-block" id="vnov" value="@ViewBag.VNovop">
+            </td>
+            <td width="12">
+                <input type="text" readonly style="width:100%;" class="form-control btn-block" id="vgor" value="@ViewBag.VGorki">
+            </td>
+            <td width="2">
+            </td>
+        </tr>
+        <tr>
+            <td width="2">
+            </td>
+            <td width="12">
+            </td>
+                       
+            <td colspan="3">
+                Объем нефти по всем филиалам:
+            </td>
+            <td width="12">
+                <input type="text" readonly style="width:100%;" class="form-control btn-block" id="vpin" value="@ViewBag.VITOG">
+            </td>
+            <td width="12">
+                м<sup><small>3</small></sup>
+            </td>
+            <td width="12">                
+            </td>
+            <td width="12">
+            </td>
+            <td width="2">
+            </td>
+        </tr>
+    </table>
+    <center><img src="Image/rez.png" width="800"></center>
+</div>

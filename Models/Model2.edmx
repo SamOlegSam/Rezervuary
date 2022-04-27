@@ -1,0 +1,1515 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="Хранилище KepDataLoggerModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="GomelNS1_Level_Tank100_1">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="value" Type="float" />
+          <Property Name="dt" Type="datetime" Nullable="false" />
+          <Property Name="quality" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="GomelNS1_Level_Tank100_2">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="value" Type="float" />
+          <Property Name="dt" Type="datetime" Nullable="false" />
+          <Property Name="quality" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="GomelNS1_Level_Tank400_1">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="value" Type="float" />
+          <Property Name="dt" Type="datetime" Nullable="false" />
+          <Property Name="quality" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="GomelNS1_Level_TankLeak100_1">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="value" Type="float" Nullable="false" />
+          <Property Name="dt" Type="datetime" Nullable="false" />
+          <Property Name="quality" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="GomelNS1_Level_TankLeak100_2">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="value" Type="float" Nullable="false" />
+          <Property Name="dt" Type="datetime" Nullable="false" />
+          <Property Name="quality" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="GomelNS1_Level_TankLeak12">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="value" Type="float" Nullable="false" />
+          <Property Name="dt" Type="datetime" Nullable="false" />
+          <Property Name="quality" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="GomelNS1_Level_TankLeak20">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="value" Type="float" />
+          <Property Name="dt" Type="datetime" Nullable="false" />
+          <Property Name="quality" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="GomelNS1_Level_TankLeak400_1">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="value" Type="float" Nullable="false" />
+          <Property Name="dt" Type="datetime" Nullable="false" />
+          <Property Name="quality" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="GomelNS2_Level_Tank400_2">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="value" Type="float" Nullable="false" />
+          <Property Name="dt" Type="datetime" Nullable="false" />
+          <Property Name="quality" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="GomelNS2_Level_TankLeak40_1">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="value" Type="float" Nullable="false" />
+          <Property Name="dt" Type="datetime" Nullable="false" />
+          <Property Name="quality" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="GomelNS2_Level_TankLeak40_2">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="value" Type="float" Nullable="false" />
+          <Property Name="dt" Type="datetime" Nullable="false" />
+          <Property Name="quality" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="GomelNS2_Level_TankLeak400_2">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="value" Type="float" Nullable="false" />
+          <Property Name="dt" Type="datetime" Nullable="false" />
+          <Property Name="quality" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="GomelScr_Level_TankLeak30">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="value" Type="float" Nullable="false" />
+          <Property Name="dt" Type="datetime" Nullable="false" />
+          <Property Name="quality" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="GorkiNS2_Level_TankLeak25_1">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="value" Type="float" />
+          <Property Name="dt" Type="datetime" Nullable="false" />
+          <Property Name="quality" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="GorkiNS2_Level_TankLeak25_2">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="value" Type="float" />
+          <Property Name="dt" Type="datetime" Nullable="false" />
+          <Property Name="quality" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="KobrinNS1_Level_TankLeak12">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="value" Type="float" />
+          <Property Name="dt" Type="datetime" Nullable="false" />
+          <Property Name="quality" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="KobrinNS2_Level_TankLeak100_1">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="value" Type="float" />
+          <Property Name="dt" Type="datetime" Nullable="false" />
+          <Property Name="quality" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="KobrinNS2_Level_TankLeak100_2">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="value" Type="float" />
+          <Property Name="dt" Type="datetime" Nullable="false" />
+          <Property Name="quality" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="KobrinNS2_Level_TankLeak200_1">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="value" Type="float" />
+          <Property Name="dt" Type="datetime" Nullable="false" />
+          <Property Name="quality" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="KobrinNS2_Level_TankLeak200_2">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="value" Type="float" />
+          <Property Name="dt" Type="datetime" Nullable="false" />
+          <Property Name="quality" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="MozAdam_km441_Level_Leak25">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="value" Type="float" Nullable="false" />
+          <Property Name="dt" Type="datetime" Nullable="false" />
+          <Property Name="quality" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="MozyrBK1_Level_TankLeak25_Scr4">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="value" Type="float" />
+          <Property Name="dt" Type="datetime" Nullable="false" />
+          <Property Name="quality" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="MozyrBK18_Tank_Level_19">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="value" Type="float" />
+          <Property Name="dt" Type="datetime" Nullable="false" />
+          <Property Name="quality" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="MozyrBK18_Tank_Level_20">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="value" Type="float" />
+          <Property Name="dt" Type="datetime" Nullable="false" />
+          <Property Name="quality" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="MozyrNS2_Level_TanlLeak1-2">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="value" Type="float" Nullable="false" />
+          <Property Name="dt" Type="datetime" Nullable="false" />
+          <Property Name="quality" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="MozyrNS2_Level_TanlLeak25">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="value" Type="float" Nullable="false" />
+          <Property Name="dt" Type="datetime" Nullable="false" />
+          <Property Name="quality" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="MozyrNS3_Level_TankLeak47">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="value" Type="float" Nullable="false" />
+          <Property Name="dt" Type="datetime" Nullable="false" />
+          <Property Name="quality" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="MozyrNS41_Level_TankLeak63">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="value" Type="float" Nullable="false" />
+          <Property Name="dt" Type="datetime" Nullable="false" />
+          <Property Name="quality" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="MozyrNS41_Level_TankLeakMA63">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="value" Type="float" />
+          <Property Name="dt" Type="datetime" Nullable="false" />
+          <Property Name="quality" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="MozyrNS5_Level_TankLeak25">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="value" Type="float" />
+          <Property Name="dt" Type="datetime" Nullable="false" />
+          <Property Name="quality" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="MozyrNS5_Level_TankLeak461_1">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="value" Type="float" />
+          <Property Name="dt" Type="datetime" Nullable="false" />
+          <Property Name="quality" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="MozyrNS5_Level_TankLeak461_2">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="value" Type="float" />
+          <Property Name="dt" Type="datetime" Nullable="false" />
+          <Property Name="quality" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PinskNS1_Level_TankLeak40">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="value" Type="float" />
+          <Property Name="dt" Type="datetime" Nullable="false" />
+          <Property Name="quality" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PinskNS2_Level_TankLeak200_1">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="value" Type="float" />
+          <Property Name="dt" Type="datetime" Nullable="false" />
+          <Property Name="quality" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PinskNS2_Level_TankLeak200_2">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="value" Type="float" />
+          <Property Name="dt" Type="datetime" Nullable="false" />
+          <Property Name="quality" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PinskNS2_Level_TankLeak25">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="value" Type="float" />
+          <Property Name="dt" Type="datetime" Nullable="false" />
+          <Property Name="quality" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PinskScr_Level_TankLeak25">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="value" Type="float" />
+          <Property Name="dt" Type="datetime" Nullable="false" />
+          <Property Name="quality" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SIKN461_Level_TankLeak">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="value" Type="float" Nullable="false" />
+          <Property Name="dt" Type="datetime" Nullable="false" />
+          <Property Name="quality" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TurovNS1_Level_TankLeak12">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="value" Type="float" />
+          <Property Name="dt" Type="datetime" Nullable="false" />
+          <Property Name="quality" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TurovNS2_Level_TankLeak200_1">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="value" Type="float" />
+          <Property Name="dt" Type="datetime" Nullable="false" />
+          <Property Name="quality" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TurovNS2_Level_TankLeak200_2">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="value" Type="float" />
+          <Property Name="dt" Type="datetime" Nullable="false" />
+          <Property Name="quality" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TurovNS2_Level_TankLeak25_1">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="value" Type="float" />
+          <Property Name="dt" Type="datetime" Nullable="false" />
+          <Property Name="quality" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TurovNS2_Level_TankLeak25_2">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="value" Type="float" />
+          <Property Name="dt" Type="datetime" Nullable="false" />
+          <Property Name="quality" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ZaschNS1_Level_TankLeak25">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="value" Type="float" Nullable="false" />
+          <Property Name="dt" Type="datetime" Nullable="false" />
+          <Property Name="quality" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ZaschNS2_Level_TankLeak100_1">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="value" Type="float" />
+          <Property Name="dt" Type="datetime" Nullable="false" />
+          <Property Name="quality" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ZaschNS2_Level_TankLeak100_2">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="value" Type="float" />
+          <Property Name="dt" Type="datetime" Nullable="false" />
+          <Property Name="quality" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ZaschNS2_Level_TankLeak100_3">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="value" Type="float" />
+          <Property Name="dt" Type="datetime" Nullable="false" />
+          <Property Name="quality" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ZaschNS2_Level_TankLeak200_1">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="value" Type="float" />
+          <Property Name="dt" Type="datetime" Nullable="false" />
+          <Property Name="quality" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ZaschNS2_Level_TankLeak200_2">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="value" Type="float" />
+          <Property Name="dt" Type="datetime" Nullable="false" />
+          <Property Name="quality" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="Хранилище KepDataLoggerModelContainer">
+          <EntitySet Name="GomelNS1_Level_Tank100_1" EntityType="Self.GomelNS1_Level_Tank100_1" Schema="dbo" Table="GomelNS1.Level.Tank100_1" store:Type="Tables" />
+          <EntitySet Name="GomelNS1_Level_Tank100_2" EntityType="Self.GomelNS1_Level_Tank100_2" Schema="dbo" Table="GomelNS1.Level.Tank100_2" store:Type="Tables" />
+          <EntitySet Name="GomelNS1_Level_Tank400_1" EntityType="Self.GomelNS1_Level_Tank400_1" Schema="dbo" Table="GomelNS1.Level.Tank400_1" store:Type="Tables" />
+          <EntitySet Name="GomelNS1_Level_TankLeak100_1" EntityType="Self.GomelNS1_Level_TankLeak100_1" Schema="dbo" Table="GomelNS1.Level.TankLeak100_1" store:Type="Tables" />
+          <EntitySet Name="GomelNS1_Level_TankLeak100_2" EntityType="Self.GomelNS1_Level_TankLeak100_2" Schema="dbo" Table="GomelNS1.Level.TankLeak100_2" store:Type="Tables" />
+          <EntitySet Name="GomelNS1_Level_TankLeak12" EntityType="Self.GomelNS1_Level_TankLeak12" Schema="dbo" Table="GomelNS1.Level.TankLeak12" store:Type="Tables" />
+          <EntitySet Name="GomelNS1_Level_TankLeak20" EntityType="Self.GomelNS1_Level_TankLeak20" Schema="dbo" Table="GomelNS1.Level.TankLeak20" store:Type="Tables" />
+          <EntitySet Name="GomelNS1_Level_TankLeak400_1" EntityType="Self.GomelNS1_Level_TankLeak400_1" Schema="dbo" Table="GomelNS1.Level.TankLeak400_1" store:Type="Tables" />
+          <EntitySet Name="GomelNS2_Level_Tank400_2" EntityType="Self.GomelNS2_Level_Tank400_2" Schema="dbo" Table="GomelNS2.Level.Tank400_2" store:Type="Tables" />
+          <EntitySet Name="GomelNS2_Level_TankLeak40_1" EntityType="Self.GomelNS2_Level_TankLeak40_1" Schema="dbo" Table="GomelNS2.Level.TankLeak40_1" store:Type="Tables" />
+          <EntitySet Name="GomelNS2_Level_TankLeak40_2" EntityType="Self.GomelNS2_Level_TankLeak40_2" Schema="dbo" Table="GomelNS2.Level.TankLeak40_2" store:Type="Tables" />
+          <EntitySet Name="GomelNS2_Level_TankLeak400_2" EntityType="Self.GomelNS2_Level_TankLeak400_2" Schema="dbo" Table="GomelNS2.Level.TankLeak400_2" store:Type="Tables" />
+          <EntitySet Name="GomelScr_Level_TankLeak30" EntityType="Self.GomelScr_Level_TankLeak30" Schema="dbo" Table="GomelScr.Level.TankLeak30" store:Type="Tables" />
+          <EntitySet Name="GorkiNS2_Level_TankLeak25_1" EntityType="Self.GorkiNS2_Level_TankLeak25_1" Schema="dbo" Table="GorkiNS2.Level.TankLeak25_1" store:Type="Tables" />
+          <EntitySet Name="GorkiNS2_Level_TankLeak25_2" EntityType="Self.GorkiNS2_Level_TankLeak25_2" Schema="dbo" Table="GorkiNS2.Level.TankLeak25_2" store:Type="Tables" />
+          <EntitySet Name="KobrinNS1_Level_TankLeak12" EntityType="Self.KobrinNS1_Level_TankLeak12" Schema="dbo" Table="KobrinNS1.Level.TankLeak12" store:Type="Tables" />
+          <EntitySet Name="KobrinNS2_Level_TankLeak100_1" EntityType="Self.KobrinNS2_Level_TankLeak100_1" Schema="dbo" Table="KobrinNS2.Level.TankLeak100_1" store:Type="Tables" />
+          <EntitySet Name="KobrinNS2_Level_TankLeak100_2" EntityType="Self.KobrinNS2_Level_TankLeak100_2" Schema="dbo" Table="KobrinNS2.Level.TankLeak100_2" store:Type="Tables" />
+          <EntitySet Name="KobrinNS2_Level_TankLeak200_1" EntityType="Self.KobrinNS2_Level_TankLeak200_1" Schema="dbo" Table="KobrinNS2.Level.TankLeak200_1" store:Type="Tables" />
+          <EntitySet Name="KobrinNS2_Level_TankLeak200_2" EntityType="Self.KobrinNS2_Level_TankLeak200_2" Schema="dbo" Table="KobrinNS2.Level.TankLeak200_2" store:Type="Tables" />
+          <EntitySet Name="MozAdam_km441_Level_Leak25" EntityType="Self.MozAdam_km441_Level_Leak25" Schema="dbo" Table="MozAdam.km441.Level.Leak25" store:Type="Tables" />
+          <EntitySet Name="MozyrBK1_Level_TankLeak25_Scr4" EntityType="Self.MozyrBK1_Level_TankLeak25_Scr4" Schema="dbo" Table="MozyrBK1.Level.TankLeak25_Scr4" store:Type="Tables" />
+          <EntitySet Name="MozyrBK18_Tank_Level_19" EntityType="Self.MozyrBK18_Tank_Level_19" Schema="dbo" Table="MozyrBK18.Tank.Level.19" store:Type="Tables" />
+          <EntitySet Name="MozyrBK18_Tank_Level_20" EntityType="Self.MozyrBK18_Tank_Level_20" Schema="dbo" Table="MozyrBK18.Tank.Level.20" store:Type="Tables" />
+          <EntitySet Name="MozyrNS2_Level_TanlLeak1-2" EntityType="Self.MozyrNS2_Level_TanlLeak1-2" Schema="dbo" Table="MozyrNS2.Level.TanlLeak1-2" store:Type="Tables" />
+          <EntitySet Name="MozyrNS2_Level_TanlLeak25" EntityType="Self.MozyrNS2_Level_TanlLeak25" Schema="dbo" Table="MozyrNS2.Level.TanlLeak25" store:Type="Tables" />
+          <EntitySet Name="MozyrNS3_Level_TankLeak47" EntityType="Self.MozyrNS3_Level_TankLeak47" Schema="dbo" Table="MozyrNS3.Level.TankLeak47" store:Type="Tables" />
+          <EntitySet Name="MozyrNS41_Level_TankLeak63" EntityType="Self.MozyrNS41_Level_TankLeak63" Schema="dbo" Table="MozyrNS41.Level.TankLeak63" store:Type="Tables" />
+          <EntitySet Name="MozyrNS41_Level_TankLeakMA63" EntityType="Self.MozyrNS41_Level_TankLeakMA63" Schema="dbo" Table="MozyrNS41.Level.TankLeakMA63" store:Type="Tables" />
+          <EntitySet Name="MozyrNS5_Level_TankLeak25" EntityType="Self.MozyrNS5_Level_TankLeak25" Schema="dbo" Table="MozyrNS5.Level.TankLeak25" store:Type="Tables" />
+          <EntitySet Name="MozyrNS5_Level_TankLeak461_1" EntityType="Self.MozyrNS5_Level_TankLeak461_1" Schema="dbo" Table="MozyrNS5.Level.TankLeak461_1" store:Type="Tables" />
+          <EntitySet Name="MozyrNS5_Level_TankLeak461_2" EntityType="Self.MozyrNS5_Level_TankLeak461_2" Schema="dbo" Table="MozyrNS5.Level.TankLeak461_2" store:Type="Tables" />
+          <EntitySet Name="PinskNS1_Level_TankLeak40" EntityType="Self.PinskNS1_Level_TankLeak40" Schema="dbo" Table="PinskNS1.Level.TankLeak40" store:Type="Tables" />
+          <EntitySet Name="PinskNS2_Level_TankLeak200_1" EntityType="Self.PinskNS2_Level_TankLeak200_1" Schema="dbo" Table="PinskNS2.Level.TankLeak200_1" store:Type="Tables" />
+          <EntitySet Name="PinskNS2_Level_TankLeak200_2" EntityType="Self.PinskNS2_Level_TankLeak200_2" Schema="dbo" Table="PinskNS2.Level.TankLeak200_2" store:Type="Tables" />
+          <EntitySet Name="PinskNS2_Level_TankLeak25" EntityType="Self.PinskNS2_Level_TankLeak25" Schema="dbo" Table="PinskNS2.Level.TankLeak25" store:Type="Tables" />
+          <EntitySet Name="PinskScr_Level_TankLeak25" EntityType="Self.PinskScr_Level_TankLeak25" Schema="dbo" Table="PinskScr.Level.TankLeak25" store:Type="Tables" />
+          <EntitySet Name="SIKN461_Level_TankLeak" EntityType="Self.SIKN461_Level_TankLeak" Schema="dbo" Table="SIKN461.Level.TankLeak" store:Type="Tables" />
+          <EntitySet Name="TurovNS1_Level_TankLeak12" EntityType="Self.TurovNS1_Level_TankLeak12" Schema="dbo" Table="TurovNS1.Level.TankLeak12" store:Type="Tables" />
+          <EntitySet Name="TurovNS2_Level_TankLeak200_1" EntityType="Self.TurovNS2_Level_TankLeak200_1" Schema="dbo" Table="TurovNS2.Level.TankLeak200_1" store:Type="Tables" />
+          <EntitySet Name="TurovNS2_Level_TankLeak200_2" EntityType="Self.TurovNS2_Level_TankLeak200_2" Schema="dbo" Table="TurovNS2.Level.TankLeak200_2" store:Type="Tables" />
+          <EntitySet Name="TurovNS2_Level_TankLeak25_1" EntityType="Self.TurovNS2_Level_TankLeak25_1" Schema="dbo" Table="TurovNS2.Level.TankLeak25_1" store:Type="Tables" />
+          <EntitySet Name="TurovNS2_Level_TankLeak25_2" EntityType="Self.TurovNS2_Level_TankLeak25_2" Schema="dbo" Table="TurovNS2.Level.TankLeak25_2" store:Type="Tables" />
+          <EntitySet Name="ZaschNS1_Level_TankLeak25" EntityType="Self.ZaschNS1_Level_TankLeak25" Schema="dbo" Table="ZaschNS1.Level.TankLeak25" store:Type="Tables" />
+          <EntitySet Name="ZaschNS2_Level_TankLeak100_1" EntityType="Self.ZaschNS2_Level_TankLeak100_1" Schema="dbo" Table="ZaschNS2.Level.TankLeak100_1" store:Type="Tables" />
+          <EntitySet Name="ZaschNS2_Level_TankLeak100_2" EntityType="Self.ZaschNS2_Level_TankLeak100_2" Schema="dbo" Table="ZaschNS2.Level.TankLeak100_2" store:Type="Tables" />
+          <EntitySet Name="ZaschNS2_Level_TankLeak100_3" EntityType="Self.ZaschNS2_Level_TankLeak100_3" Schema="dbo" Table="ZaschNS2.Level.TankLeak100_3" store:Type="Tables" />
+          <EntitySet Name="ZaschNS2_Level_TankLeak200_1" EntityType="Self.ZaschNS2_Level_TankLeak200_1" Schema="dbo" Table="ZaschNS2.Level.TankLeak200_1" store:Type="Tables" />
+          <EntitySet Name="ZaschNS2_Level_TankLeak200_2" EntityType="Self.ZaschNS2_Level_TankLeak200_2" Schema="dbo" Table="ZaschNS2.Level.TankLeak200_2" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="KepDataLoggerModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="GomelNS1_Level_Tank100_1">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="value" Type="Double" />
+          <Property Name="dt" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="quality" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="GomelNS1_Level_Tank100_2">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="value" Type="Double" />
+          <Property Name="dt" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="quality" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="GomelNS1_Level_Tank400_1">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="value" Type="Double" />
+          <Property Name="dt" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="quality" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="GomelNS1_Level_TankLeak12">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="value" Type="Double" Nullable="false" />
+          <Property Name="dt" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="quality" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="GomelNS1_Level_TankLeak20">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="value" Type="Double" />
+          <Property Name="dt" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="quality" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="GomelNS2_Level_Tank400_2">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="value" Type="Double" Nullable="false" />
+          <Property Name="dt" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="quality" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="GomelNS2_Level_TankLeak40_1">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="value" Type="Double" Nullable="false" />
+          <Property Name="dt" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="quality" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="GomelNS2_Level_TankLeak40_2">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="value" Type="Double" Nullable="false" />
+          <Property Name="dt" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="quality" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="GomelScr_Level_TankLeak30">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="value" Type="Double" Nullable="false" />
+          <Property Name="dt" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="quality" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="GorkiNS2_Level_TankLeak25_1">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="value" Type="Double" />
+          <Property Name="dt" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="quality" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="GorkiNS2_Level_TankLeak25_2">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="value" Type="Double" />
+          <Property Name="dt" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="quality" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="KobrinNS1_Level_TankLeak12">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="value" Type="Double" />
+          <Property Name="dt" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="quality" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="KobrinNS2_Level_TankLeak100_1">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="value" Type="Double" />
+          <Property Name="dt" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="quality" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="KobrinNS2_Level_TankLeak100_2">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="value" Type="Double" />
+          <Property Name="dt" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="quality" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="KobrinNS2_Level_TankLeak200_1">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="value" Type="Double" />
+          <Property Name="dt" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="quality" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="KobrinNS2_Level_TankLeak200_2">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="value" Type="Double" />
+          <Property Name="dt" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="quality" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="MozAdam_km441_Level_Leak25">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="value" Type="Double" Nullable="false" />
+          <Property Name="dt" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="quality" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="MozyrBK1_Level_TankLeak25_Scr4">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="value" Type="Double" />
+          <Property Name="dt" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="quality" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="MozyrNS2_Level_TanlLeak1_2">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="value" Type="Double" Nullable="false" />
+          <Property Name="dt" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="quality" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="MozyrNS2_Level_TanlLeak25">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="value" Type="Double" Nullable="false" />
+          <Property Name="dt" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="quality" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="MozyrNS3_Level_TankLeak47">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="value" Type="Double" Nullable="false" />
+          <Property Name="dt" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="quality" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="MozyrNS41_Level_TankLeak63">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="value" Type="Double" Nullable="false" />
+          <Property Name="dt" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="quality" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PinskNS1_Level_TankLeak40">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="value" Type="Double" />
+          <Property Name="dt" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="quality" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PinskNS2_Level_TankLeak200_1">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="value" Type="Double" />
+          <Property Name="dt" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="quality" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PinskNS2_Level_TankLeak200_2">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="value" Type="Double" />
+          <Property Name="dt" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="quality" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PinskNS2_Level_TankLeak25">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="value" Type="Double" />
+          <Property Name="dt" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="quality" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PinskScr_Level_TankLeak25">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="value" Type="Double" />
+          <Property Name="dt" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="quality" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SIKN461_Level_TankLeak">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="value" Type="Double" Nullable="false" />
+          <Property Name="dt" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="quality" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TurovNS1_Level_TankLeak12">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="value" Type="Double" />
+          <Property Name="dt" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="quality" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TurovNS2_Level_TankLeak200_1">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="value" Type="Double" />
+          <Property Name="dt" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="quality" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TurovNS2_Level_TankLeak200_2">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="value" Type="Double" />
+          <Property Name="dt" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="quality" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ZaschNS1_Level_TankLeak25">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="value" Type="Double" Nullable="false" />
+          <Property Name="dt" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="quality" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ZaschNS2_Level_TankLeak100_1">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="value" Type="Double" />
+          <Property Name="dt" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="quality" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ZaschNS2_Level_TankLeak100_2">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="value" Type="Double" />
+          <Property Name="dt" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="quality" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ZaschNS2_Level_TankLeak100_3">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="value" Type="Double" />
+          <Property Name="dt" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="quality" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ZaschNS2_Level_TankLeak200_1">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="value" Type="Double" />
+          <Property Name="dt" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="quality" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ZaschNS2_Level_TankLeak200_2">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="value" Type="Double" />
+          <Property Name="dt" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="quality" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="KepDataLoggerEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="GomelNS1_Level_Tank100_1" EntityType="Self.GomelNS1_Level_Tank100_1" />
+          <EntitySet Name="GomelNS1_Level_Tank100_2" EntityType="Self.GomelNS1_Level_Tank100_2" />
+          <EntitySet Name="GomelNS1_Level_Tank400_1" EntityType="Self.GomelNS1_Level_Tank400_1" />
+          <EntitySet Name="GomelNS1_Level_TankLeak12" EntityType="Self.GomelNS1_Level_TankLeak12" />
+          <EntitySet Name="GomelNS1_Level_TankLeak20" EntityType="Self.GomelNS1_Level_TankLeak20" />
+          <EntitySet Name="GomelNS2_Level_Tank400_2" EntityType="Self.GomelNS2_Level_Tank400_2" />
+          <EntitySet Name="GomelNS2_Level_TankLeak40_1" EntityType="Self.GomelNS2_Level_TankLeak40_1" />
+          <EntitySet Name="GomelNS2_Level_TankLeak40_2" EntityType="Self.GomelNS2_Level_TankLeak40_2" />
+          <EntitySet Name="GomelScr_Level_TankLeak30" EntityType="Self.GomelScr_Level_TankLeak30" />
+          <EntitySet Name="GorkiNS2_Level_TankLeak25_1" EntityType="Self.GorkiNS2_Level_TankLeak25_1" />
+          <EntitySet Name="GorkiNS2_Level_TankLeak25_2" EntityType="Self.GorkiNS2_Level_TankLeak25_2" />
+          <EntitySet Name="KobrinNS1_Level_TankLeak12" EntityType="Self.KobrinNS1_Level_TankLeak12" />
+          <EntitySet Name="KobrinNS2_Level_TankLeak100_1" EntityType="Self.KobrinNS2_Level_TankLeak100_1" />
+          <EntitySet Name="KobrinNS2_Level_TankLeak100_2" EntityType="Self.KobrinNS2_Level_TankLeak100_2" />
+          <EntitySet Name="KobrinNS2_Level_TankLeak200_1" EntityType="Self.KobrinNS2_Level_TankLeak200_1" />
+          <EntitySet Name="KobrinNS2_Level_TankLeak200_2" EntityType="Self.KobrinNS2_Level_TankLeak200_2" />
+          <EntitySet Name="MozAdam_km441_Level_Leak25" EntityType="Self.MozAdam_km441_Level_Leak25" />
+          <EntitySet Name="MozyrBK1_Level_TankLeak25_Scr4" EntityType="Self.MozyrBK1_Level_TankLeak25_Scr4" />
+          <EntitySet Name="MozyrNS2_Level_TanlLeak1_2" EntityType="Self.MozyrNS2_Level_TanlLeak1_2" />
+          <EntitySet Name="MozyrNS2_Level_TanlLeak25" EntityType="Self.MozyrNS2_Level_TanlLeak25" />
+          <EntitySet Name="MozyrNS3_Level_TankLeak47" EntityType="Self.MozyrNS3_Level_TankLeak47" />
+          <EntitySet Name="MozyrNS41_Level_TankLeak63" EntityType="Self.MozyrNS41_Level_TankLeak63" />
+          <EntitySet Name="PinskNS1_Level_TankLeak40" EntityType="Self.PinskNS1_Level_TankLeak40" />
+          <EntitySet Name="PinskNS2_Level_TankLeak200_1" EntityType="Self.PinskNS2_Level_TankLeak200_1" />
+          <EntitySet Name="PinskNS2_Level_TankLeak200_2" EntityType="Self.PinskNS2_Level_TankLeak200_2" />
+          <EntitySet Name="PinskNS2_Level_TankLeak25" EntityType="Self.PinskNS2_Level_TankLeak25" />
+          <EntitySet Name="PinskScr_Level_TankLeak25" EntityType="Self.PinskScr_Level_TankLeak25" />
+          <EntitySet Name="SIKN461_Level_TankLeak" EntityType="Self.SIKN461_Level_TankLeak" />
+          <EntitySet Name="TurovNS1_Level_TankLeak12" EntityType="Self.TurovNS1_Level_TankLeak12" />
+          <EntitySet Name="TurovNS2_Level_TankLeak200_1" EntityType="Self.TurovNS2_Level_TankLeak200_1" />
+          <EntitySet Name="TurovNS2_Level_TankLeak200_2" EntityType="Self.TurovNS2_Level_TankLeak200_2" />
+          <EntitySet Name="ZaschNS1_Level_TankLeak25" EntityType="Self.ZaschNS1_Level_TankLeak25" />
+          <EntitySet Name="ZaschNS2_Level_TankLeak100_1" EntityType="Self.ZaschNS2_Level_TankLeak100_1" />
+          <EntitySet Name="ZaschNS2_Level_TankLeak100_2" EntityType="Self.ZaschNS2_Level_TankLeak100_2" />
+          <EntitySet Name="ZaschNS2_Level_TankLeak100_3" EntityType="Self.ZaschNS2_Level_TankLeak100_3" />
+          <EntitySet Name="ZaschNS2_Level_TankLeak200_1" EntityType="Self.ZaschNS2_Level_TankLeak200_1" />
+          <EntitySet Name="ZaschNS2_Level_TankLeak200_2" EntityType="Self.ZaschNS2_Level_TankLeak200_2" />
+          <EntitySet Name="GomelNS1_Level_TankLeak100_1" EntityType="KepDataLoggerModel.GomelNS1_Level_TankLeak100_1" />
+          <EntitySet Name="GomelNS1_Level_TankLeak100_2" EntityType="KepDataLoggerModel.GomelNS1_Level_TankLeak100_2" />
+          <EntitySet Name="GomelNS1_Level_TankLeak400_1" EntityType="KepDataLoggerModel.GomelNS1_Level_TankLeak400_1" />
+          <EntitySet Name="GomelNS2_Level_TankLeak400_2" EntityType="KepDataLoggerModel.GomelNS2_Level_TankLeak400_2" />
+          <EntitySet Name="TurovNS2_Level_TankLeak25_1" EntityType="KepDataLoggerModel.TurovNS2_Level_TankLeak25_1" />
+          <EntitySet Name="TurovNS2_Level_TankLeak25_2" EntityType="KepDataLoggerModel.TurovNS2_Level_TankLeak25_2" />
+          <EntitySet Name="MozyrNS5_Level_TankLeak461_1" EntityType="KepDataLoggerModel.MozyrNS5_Level_TankLeak461_1" />
+          <EntitySet Name="MozyrNS5_Level_TankLeak461_2" EntityType="KepDataLoggerModel.MozyrNS5_Level_TankLeak461_2" />
+          <EntitySet Name="MozyrNS41_Level_TankLeakMA63" EntityType="KepDataLoggerModel.MozyrNS41_Level_TankLeakMA63" />
+          <EntitySet Name="MozyrNS5_Level_TankLeak25" EntityType="KepDataLoggerModel.MozyrNS5_Level_TankLeak25" />
+          <EntitySet Name="MozyrBK18_Tank_Level_19" EntityType="KepDataLoggerModel.MozyrBK18_Tank_Level_19" />
+          <EntitySet Name="MozyrBK18_Tank_Level_20" EntityType="KepDataLoggerModel.MozyrBK18_Tank_Level_20" />
+        </EntityContainer>
+        <EntityType Name="GomelNS1_Level_TankLeak100_1">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="value" Type="Double" Nullable="false" />
+          <Property Name="dt" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="quality" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="GomelNS1_Level_TankLeak100_2">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="value" Type="Double" Nullable="false" />
+          <Property Name="dt" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="quality" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="GomelNS1_Level_TankLeak400_1">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="value" Type="Double" Nullable="false" />
+          <Property Name="dt" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="quality" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="GomelNS2_Level_TankLeak400_2">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="value" Type="Double" Nullable="false" />
+          <Property Name="dt" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="quality" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TurovNS2_Level_TankLeak25_1">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="value" Type="Double" />
+          <Property Name="dt" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="quality" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TurovNS2_Level_TankLeak25_2">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="value" Type="Double" />
+          <Property Name="dt" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="quality" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="MozyrNS5_Level_TankLeak461_1">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="value" Type="Double" />
+          <Property Name="dt" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="quality" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="MozyrNS5_Level_TankLeak461_2">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="value" Type="Double" />
+          <Property Name="dt" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="quality" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="MozyrNS41_Level_TankLeakMA63">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="value" Type="Double" />
+          <Property Name="dt" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="quality" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="MozyrNS5_Level_TankLeak25">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="value" Type="Double" />
+          <Property Name="dt" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="quality" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="MozyrBK18_Tank_Level_19">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="value" Type="Double" />
+          <Property Name="dt" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="quality" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="MozyrBK18_Tank_Level_20">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="value" Type="Double" />
+          <Property Name="dt" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="quality" Type="Int32" Nullable="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Хранилище KepDataLoggerModelContainer" CdmEntityContainer="KepDataLoggerEntities">
+          <EntitySetMapping Name="GomelNS1_Level_Tank100_1">
+            <EntityTypeMapping TypeName="KepDataLoggerModel.GomelNS1_Level_Tank100_1">
+              <MappingFragment StoreEntitySet="GomelNS1_Level_Tank100_1">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="value" ColumnName="value" />
+                <ScalarProperty Name="dt" ColumnName="dt" />
+                <ScalarProperty Name="quality" ColumnName="quality" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GomelNS1_Level_Tank100_2">
+            <EntityTypeMapping TypeName="KepDataLoggerModel.GomelNS1_Level_Tank100_2">
+              <MappingFragment StoreEntitySet="GomelNS1_Level_Tank100_2">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="value" ColumnName="value" />
+                <ScalarProperty Name="dt" ColumnName="dt" />
+                <ScalarProperty Name="quality" ColumnName="quality" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GomelNS1_Level_Tank400_1">
+            <EntityTypeMapping TypeName="KepDataLoggerModel.GomelNS1_Level_Tank400_1">
+              <MappingFragment StoreEntitySet="GomelNS1_Level_Tank400_1">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="value" ColumnName="value" />
+                <ScalarProperty Name="dt" ColumnName="dt" />
+                <ScalarProperty Name="quality" ColumnName="quality" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GomelNS1_Level_TankLeak12">
+            <EntityTypeMapping TypeName="KepDataLoggerModel.GomelNS1_Level_TankLeak12">
+              <MappingFragment StoreEntitySet="GomelNS1_Level_TankLeak12">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="value" ColumnName="value" />
+                <ScalarProperty Name="dt" ColumnName="dt" />
+                <ScalarProperty Name="quality" ColumnName="quality" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GomelNS1_Level_TankLeak20">
+            <EntityTypeMapping TypeName="KepDataLoggerModel.GomelNS1_Level_TankLeak20">
+              <MappingFragment StoreEntitySet="GomelNS1_Level_TankLeak20">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="value" ColumnName="value" />
+                <ScalarProperty Name="dt" ColumnName="dt" />
+                <ScalarProperty Name="quality" ColumnName="quality" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GomelNS2_Level_Tank400_2">
+            <EntityTypeMapping TypeName="KepDataLoggerModel.GomelNS2_Level_Tank400_2">
+              <MappingFragment StoreEntitySet="GomelNS2_Level_Tank400_2">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="value" ColumnName="value" />
+                <ScalarProperty Name="dt" ColumnName="dt" />
+                <ScalarProperty Name="quality" ColumnName="quality" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GomelNS2_Level_TankLeak40_1">
+            <EntityTypeMapping TypeName="KepDataLoggerModel.GomelNS2_Level_TankLeak40_1">
+              <MappingFragment StoreEntitySet="GomelNS2_Level_TankLeak40_1">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="value" ColumnName="value" />
+                <ScalarProperty Name="dt" ColumnName="dt" />
+                <ScalarProperty Name="quality" ColumnName="quality" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GomelNS2_Level_TankLeak40_2">
+            <EntityTypeMapping TypeName="KepDataLoggerModel.GomelNS2_Level_TankLeak40_2">
+              <MappingFragment StoreEntitySet="GomelNS2_Level_TankLeak40_2">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="value" ColumnName="value" />
+                <ScalarProperty Name="dt" ColumnName="dt" />
+                <ScalarProperty Name="quality" ColumnName="quality" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GomelScr_Level_TankLeak30">
+            <EntityTypeMapping TypeName="KepDataLoggerModel.GomelScr_Level_TankLeak30">
+              <MappingFragment StoreEntitySet="GomelScr_Level_TankLeak30">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="value" ColumnName="value" />
+                <ScalarProperty Name="dt" ColumnName="dt" />
+                <ScalarProperty Name="quality" ColumnName="quality" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GorkiNS2_Level_TankLeak25_1">
+            <EntityTypeMapping TypeName="KepDataLoggerModel.GorkiNS2_Level_TankLeak25_1">
+              <MappingFragment StoreEntitySet="GorkiNS2_Level_TankLeak25_1">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="value" ColumnName="value" />
+                <ScalarProperty Name="dt" ColumnName="dt" />
+                <ScalarProperty Name="quality" ColumnName="quality" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GorkiNS2_Level_TankLeak25_2">
+            <EntityTypeMapping TypeName="KepDataLoggerModel.GorkiNS2_Level_TankLeak25_2">
+              <MappingFragment StoreEntitySet="GorkiNS2_Level_TankLeak25_2">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="value" ColumnName="value" />
+                <ScalarProperty Name="dt" ColumnName="dt" />
+                <ScalarProperty Name="quality" ColumnName="quality" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="KobrinNS1_Level_TankLeak12">
+            <EntityTypeMapping TypeName="KepDataLoggerModel.KobrinNS1_Level_TankLeak12">
+              <MappingFragment StoreEntitySet="KobrinNS1_Level_TankLeak12">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="value" ColumnName="value" />
+                <ScalarProperty Name="dt" ColumnName="dt" />
+                <ScalarProperty Name="quality" ColumnName="quality" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="KobrinNS2_Level_TankLeak100_1">
+            <EntityTypeMapping TypeName="KepDataLoggerModel.KobrinNS2_Level_TankLeak100_1">
+              <MappingFragment StoreEntitySet="KobrinNS2_Level_TankLeak100_1">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="value" ColumnName="value" />
+                <ScalarProperty Name="dt" ColumnName="dt" />
+                <ScalarProperty Name="quality" ColumnName="quality" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="KobrinNS2_Level_TankLeak100_2">
+            <EntityTypeMapping TypeName="KepDataLoggerModel.KobrinNS2_Level_TankLeak100_2">
+              <MappingFragment StoreEntitySet="KobrinNS2_Level_TankLeak100_2">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="value" ColumnName="value" />
+                <ScalarProperty Name="dt" ColumnName="dt" />
+                <ScalarProperty Name="quality" ColumnName="quality" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="KobrinNS2_Level_TankLeak200_1">
+            <EntityTypeMapping TypeName="KepDataLoggerModel.KobrinNS2_Level_TankLeak200_1">
+              <MappingFragment StoreEntitySet="KobrinNS2_Level_TankLeak200_1">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="value" ColumnName="value" />
+                <ScalarProperty Name="dt" ColumnName="dt" />
+                <ScalarProperty Name="quality" ColumnName="quality" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="KobrinNS2_Level_TankLeak200_2">
+            <EntityTypeMapping TypeName="KepDataLoggerModel.KobrinNS2_Level_TankLeak200_2">
+              <MappingFragment StoreEntitySet="KobrinNS2_Level_TankLeak200_2">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="value" ColumnName="value" />
+                <ScalarProperty Name="dt" ColumnName="dt" />
+                <ScalarProperty Name="quality" ColumnName="quality" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MozAdam_km441_Level_Leak25">
+            <EntityTypeMapping TypeName="KepDataLoggerModel.MozAdam_km441_Level_Leak25">
+              <MappingFragment StoreEntitySet="MozAdam_km441_Level_Leak25">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="value" ColumnName="value" />
+                <ScalarProperty Name="dt" ColumnName="dt" />
+                <ScalarProperty Name="quality" ColumnName="quality" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MozyrBK1_Level_TankLeak25_Scr4">
+            <EntityTypeMapping TypeName="KepDataLoggerModel.MozyrBK1_Level_TankLeak25_Scr4">
+              <MappingFragment StoreEntitySet="MozyrBK1_Level_TankLeak25_Scr4">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="value" ColumnName="value" />
+                <ScalarProperty Name="dt" ColumnName="dt" />
+                <ScalarProperty Name="quality" ColumnName="quality" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MozyrNS2_Level_TanlLeak1_2">
+            <EntityTypeMapping TypeName="KepDataLoggerModel.MozyrNS2_Level_TanlLeak1_2">
+              <MappingFragment StoreEntitySet="MozyrNS2_Level_TanlLeak1-2">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="value" ColumnName="value" />
+                <ScalarProperty Name="dt" ColumnName="dt" />
+                <ScalarProperty Name="quality" ColumnName="quality" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MozyrNS2_Level_TanlLeak25">
+            <EntityTypeMapping TypeName="KepDataLoggerModel.MozyrNS2_Level_TanlLeak25">
+              <MappingFragment StoreEntitySet="MozyrNS2_Level_TanlLeak25">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="value" ColumnName="value" />
+                <ScalarProperty Name="dt" ColumnName="dt" />
+                <ScalarProperty Name="quality" ColumnName="quality" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MozyrNS3_Level_TankLeak47">
+            <EntityTypeMapping TypeName="KepDataLoggerModel.MozyrNS3_Level_TankLeak47">
+              <MappingFragment StoreEntitySet="MozyrNS3_Level_TankLeak47">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="value" ColumnName="value" />
+                <ScalarProperty Name="dt" ColumnName="dt" />
+                <ScalarProperty Name="quality" ColumnName="quality" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MozyrNS41_Level_TankLeak63">
+            <EntityTypeMapping TypeName="KepDataLoggerModel.MozyrNS41_Level_TankLeak63">
+              <MappingFragment StoreEntitySet="MozyrNS41_Level_TankLeak63">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="value" ColumnName="value" />
+                <ScalarProperty Name="dt" ColumnName="dt" />
+                <ScalarProperty Name="quality" ColumnName="quality" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PinskNS1_Level_TankLeak40">
+            <EntityTypeMapping TypeName="KepDataLoggerModel.PinskNS1_Level_TankLeak40">
+              <MappingFragment StoreEntitySet="PinskNS1_Level_TankLeak40">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="value" ColumnName="value" />
+                <ScalarProperty Name="dt" ColumnName="dt" />
+                <ScalarProperty Name="quality" ColumnName="quality" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PinskNS2_Level_TankLeak200_1">
+            <EntityTypeMapping TypeName="KepDataLoggerModel.PinskNS2_Level_TankLeak200_1">
+              <MappingFragment StoreEntitySet="PinskNS2_Level_TankLeak200_1">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="value" ColumnName="value" />
+                <ScalarProperty Name="dt" ColumnName="dt" />
+                <ScalarProperty Name="quality" ColumnName="quality" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PinskNS2_Level_TankLeak200_2">
+            <EntityTypeMapping TypeName="KepDataLoggerModel.PinskNS2_Level_TankLeak200_2">
+              <MappingFragment StoreEntitySet="PinskNS2_Level_TankLeak200_2">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="value" ColumnName="value" />
+                <ScalarProperty Name="dt" ColumnName="dt" />
+                <ScalarProperty Name="quality" ColumnName="quality" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PinskNS2_Level_TankLeak25">
+            <EntityTypeMapping TypeName="KepDataLoggerModel.PinskNS2_Level_TankLeak25">
+              <MappingFragment StoreEntitySet="PinskNS2_Level_TankLeak25">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="value" ColumnName="value" />
+                <ScalarProperty Name="dt" ColumnName="dt" />
+                <ScalarProperty Name="quality" ColumnName="quality" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PinskScr_Level_TankLeak25">
+            <EntityTypeMapping TypeName="KepDataLoggerModel.PinskScr_Level_TankLeak25">
+              <MappingFragment StoreEntitySet="PinskScr_Level_TankLeak25">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="value" ColumnName="value" />
+                <ScalarProperty Name="dt" ColumnName="dt" />
+                <ScalarProperty Name="quality" ColumnName="quality" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SIKN461_Level_TankLeak">
+            <EntityTypeMapping TypeName="KepDataLoggerModel.SIKN461_Level_TankLeak">
+              <MappingFragment StoreEntitySet="SIKN461_Level_TankLeak">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="value" ColumnName="value" />
+                <ScalarProperty Name="dt" ColumnName="dt" />
+                <ScalarProperty Name="quality" ColumnName="quality" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TurovNS1_Level_TankLeak12">
+            <EntityTypeMapping TypeName="KepDataLoggerModel.TurovNS1_Level_TankLeak12">
+              <MappingFragment StoreEntitySet="TurovNS1_Level_TankLeak12">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="value" ColumnName="value" />
+                <ScalarProperty Name="dt" ColumnName="dt" />
+                <ScalarProperty Name="quality" ColumnName="quality" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TurovNS2_Level_TankLeak200_1">
+            <EntityTypeMapping TypeName="KepDataLoggerModel.TurovNS2_Level_TankLeak200_1">
+              <MappingFragment StoreEntitySet="TurovNS2_Level_TankLeak200_1">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="value" ColumnName="value" />
+                <ScalarProperty Name="dt" ColumnName="dt" />
+                <ScalarProperty Name="quality" ColumnName="quality" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TurovNS2_Level_TankLeak200_2">
+            <EntityTypeMapping TypeName="KepDataLoggerModel.TurovNS2_Level_TankLeak200_2">
+              <MappingFragment StoreEntitySet="TurovNS2_Level_TankLeak200_2">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="value" ColumnName="value" />
+                <ScalarProperty Name="dt" ColumnName="dt" />
+                <ScalarProperty Name="quality" ColumnName="quality" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ZaschNS1_Level_TankLeak25">
+            <EntityTypeMapping TypeName="KepDataLoggerModel.ZaschNS1_Level_TankLeak25">
+              <MappingFragment StoreEntitySet="ZaschNS1_Level_TankLeak25">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="value" ColumnName="value" />
+                <ScalarProperty Name="dt" ColumnName="dt" />
+                <ScalarProperty Name="quality" ColumnName="quality" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ZaschNS2_Level_TankLeak100_1">
+            <EntityTypeMapping TypeName="KepDataLoggerModel.ZaschNS2_Level_TankLeak100_1">
+              <MappingFragment StoreEntitySet="ZaschNS2_Level_TankLeak100_1">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="value" ColumnName="value" />
+                <ScalarProperty Name="dt" ColumnName="dt" />
+                <ScalarProperty Name="quality" ColumnName="quality" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ZaschNS2_Level_TankLeak100_2">
+            <EntityTypeMapping TypeName="KepDataLoggerModel.ZaschNS2_Level_TankLeak100_2">
+              <MappingFragment StoreEntitySet="ZaschNS2_Level_TankLeak100_2">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="value" ColumnName="value" />
+                <ScalarProperty Name="dt" ColumnName="dt" />
+                <ScalarProperty Name="quality" ColumnName="quality" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ZaschNS2_Level_TankLeak100_3">
+            <EntityTypeMapping TypeName="KepDataLoggerModel.ZaschNS2_Level_TankLeak100_3">
+              <MappingFragment StoreEntitySet="ZaschNS2_Level_TankLeak100_3">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="value" ColumnName="value" />
+                <ScalarProperty Name="dt" ColumnName="dt" />
+                <ScalarProperty Name="quality" ColumnName="quality" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ZaschNS2_Level_TankLeak200_1">
+            <EntityTypeMapping TypeName="KepDataLoggerModel.ZaschNS2_Level_TankLeak200_1">
+              <MappingFragment StoreEntitySet="ZaschNS2_Level_TankLeak200_1">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="value" ColumnName="value" />
+                <ScalarProperty Name="dt" ColumnName="dt" />
+                <ScalarProperty Name="quality" ColumnName="quality" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ZaschNS2_Level_TankLeak200_2">
+            <EntityTypeMapping TypeName="KepDataLoggerModel.ZaschNS2_Level_TankLeak200_2">
+              <MappingFragment StoreEntitySet="ZaschNS2_Level_TankLeak200_2">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="value" ColumnName="value" />
+                <ScalarProperty Name="dt" ColumnName="dt" />
+                <ScalarProperty Name="quality" ColumnName="quality" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GomelNS1_Level_TankLeak100_1">
+            <EntityTypeMapping TypeName="KepDataLoggerModel.GomelNS1_Level_TankLeak100_1">
+              <MappingFragment StoreEntitySet="GomelNS1_Level_TankLeak100_1">
+                <ScalarProperty Name="quality" ColumnName="quality" />
+                <ScalarProperty Name="dt" ColumnName="dt" />
+                <ScalarProperty Name="value" ColumnName="value" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GomelNS1_Level_TankLeak100_2">
+            <EntityTypeMapping TypeName="KepDataLoggerModel.GomelNS1_Level_TankLeak100_2">
+              <MappingFragment StoreEntitySet="GomelNS1_Level_TankLeak100_2">
+                <ScalarProperty Name="quality" ColumnName="quality" />
+                <ScalarProperty Name="dt" ColumnName="dt" />
+                <ScalarProperty Name="value" ColumnName="value" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GomelNS1_Level_TankLeak400_1">
+            <EntityTypeMapping TypeName="KepDataLoggerModel.GomelNS1_Level_TankLeak400_1">
+              <MappingFragment StoreEntitySet="GomelNS1_Level_TankLeak400_1">
+                <ScalarProperty Name="quality" ColumnName="quality" />
+                <ScalarProperty Name="dt" ColumnName="dt" />
+                <ScalarProperty Name="value" ColumnName="value" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GomelNS2_Level_TankLeak400_2">
+            <EntityTypeMapping TypeName="KepDataLoggerModel.GomelNS2_Level_TankLeak400_2">
+              <MappingFragment StoreEntitySet="GomelNS2_Level_TankLeak400_2">
+                <ScalarProperty Name="quality" ColumnName="quality" />
+                <ScalarProperty Name="dt" ColumnName="dt" />
+                <ScalarProperty Name="value" ColumnName="value" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TurovNS2_Level_TankLeak25_1">
+            <EntityTypeMapping TypeName="KepDataLoggerModel.TurovNS2_Level_TankLeak25_1">
+              <MappingFragment StoreEntitySet="TurovNS2_Level_TankLeak25_1">
+                <ScalarProperty Name="quality" ColumnName="quality" />
+                <ScalarProperty Name="dt" ColumnName="dt" />
+                <ScalarProperty Name="value" ColumnName="value" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TurovNS2_Level_TankLeak25_2">
+            <EntityTypeMapping TypeName="KepDataLoggerModel.TurovNS2_Level_TankLeak25_2">
+              <MappingFragment StoreEntitySet="TurovNS2_Level_TankLeak25_2">
+                <ScalarProperty Name="quality" ColumnName="quality" />
+                <ScalarProperty Name="dt" ColumnName="dt" />
+                <ScalarProperty Name="value" ColumnName="value" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MozyrNS5_Level_TankLeak461_1">
+            <EntityTypeMapping TypeName="KepDataLoggerModel.MozyrNS5_Level_TankLeak461_1">
+              <MappingFragment StoreEntitySet="MozyrNS5_Level_TankLeak461_1">
+                <ScalarProperty Name="quality" ColumnName="quality" />
+                <ScalarProperty Name="dt" ColumnName="dt" />
+                <ScalarProperty Name="value" ColumnName="value" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MozyrNS5_Level_TankLeak461_2">
+            <EntityTypeMapping TypeName="KepDataLoggerModel.MozyrNS5_Level_TankLeak461_2">
+              <MappingFragment StoreEntitySet="MozyrNS5_Level_TankLeak461_2">
+                <ScalarProperty Name="quality" ColumnName="quality" />
+                <ScalarProperty Name="dt" ColumnName="dt" />
+                <ScalarProperty Name="value" ColumnName="value" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MozyrNS41_Level_TankLeakMA63">
+            <EntityTypeMapping TypeName="KepDataLoggerModel.MozyrNS41_Level_TankLeakMA63">
+              <MappingFragment StoreEntitySet="MozyrNS41_Level_TankLeakMA63">
+                <ScalarProperty Name="quality" ColumnName="quality" />
+                <ScalarProperty Name="dt" ColumnName="dt" />
+                <ScalarProperty Name="value" ColumnName="value" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MozyrNS5_Level_TankLeak25">
+            <EntityTypeMapping TypeName="KepDataLoggerModel.MozyrNS5_Level_TankLeak25">
+              <MappingFragment StoreEntitySet="MozyrNS5_Level_TankLeak25">
+                <ScalarProperty Name="quality" ColumnName="quality" />
+                <ScalarProperty Name="dt" ColumnName="dt" />
+                <ScalarProperty Name="value" ColumnName="value" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MozyrBK18_Tank_Level_19">
+            <EntityTypeMapping TypeName="KepDataLoggerModel.MozyrBK18_Tank_Level_19">
+              <MappingFragment StoreEntitySet="MozyrBK18_Tank_Level_19">
+                <ScalarProperty Name="quality" ColumnName="quality" />
+                <ScalarProperty Name="dt" ColumnName="dt" />
+                <ScalarProperty Name="value" ColumnName="value" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MozyrBK18_Tank_Level_20">
+            <EntityTypeMapping TypeName="KepDataLoggerModel.MozyrBK18_Tank_Level_20">
+              <MappingFragment StoreEntitySet="MozyrBK18_Tank_Level_20">
+                <ScalarProperty Name="quality" ColumnName="quality" />
+                <ScalarProperty Name="dt" ColumnName="dt" />
+                <ScalarProperty Name="value" ColumnName="value" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Нет" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

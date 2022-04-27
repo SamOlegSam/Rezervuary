@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="fc3bee0ec2324abc89325c018a474ec0" Name="Diagram1">
+        <EntityTypeShape EntityType="KepDataLoggerModel.GomelNS1_Level_Tank100_1" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="KepDataLoggerModel.GomelNS1_Level_Tank100_2" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="KepDataLoggerModel.GomelNS1_Level_Tank400_1" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="KepDataLoggerModel.GomelNS1_Level_TankLeak12" Width="1.5" PointX="2.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="KepDataLoggerModel.GomelNS1_Level_TankLeak20" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="KepDataLoggerModel.GomelNS2_Level_Tank400_2" Width="1.5" PointX="4.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="KepDataLoggerModel.GomelNS2_Level_TankLeak40_1" Width="1.5" PointX="6.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="KepDataLoggerModel.GomelNS2_Level_TankLeak40_2" Width="1.5" PointX="0.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="KepDataLoggerModel.GomelScr_Level_TankLeak30" Width="1.5" PointX="2.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="KepDataLoggerModel.GorkiNS2_Level_TankLeak25_1" Width="1.5" PointX="6.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="KepDataLoggerModel.GorkiNS2_Level_TankLeak25_2" Width="1.5" PointX="4.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="KepDataLoggerModel.KobrinNS1_Level_TankLeak12" Width="1.5" PointX="6.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="KepDataLoggerModel.KobrinNS2_Level_TankLeak100_1" Width="1.5" PointX="8.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="KepDataLoggerModel.KobrinNS2_Level_TankLeak100_2" Width="1.5" PointX="8.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="KepDataLoggerModel.KobrinNS2_Level_TankLeak200_1" Width="1.5" PointX="8.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="KepDataLoggerModel.KobrinNS2_Level_TankLeak200_2" Width="1.5" PointX="0.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="KepDataLoggerModel.MozAdam_km441_Level_Leak25" Width="1.5" PointX="2.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="KepDataLoggerModel.MozyrBK1_Level_TankLeak25_Scr4" Width="1.5" PointX="4.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="KepDataLoggerModel.MozyrNS2_Level_TanlLeak1_2" Width="1.5" PointX="6.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="KepDataLoggerModel.MozyrNS2_Level_TanlLeak25" Width="1.5" PointX="8.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="KepDataLoggerModel.MozyrNS3_Level_TankLeak47" Width="1.5" PointX="10.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="KepDataLoggerModel.MozyrNS41_Level_TankLeak63" Width="1.5" PointX="12.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="KepDataLoggerModel.PinskNS1_Level_TankLeak40" Width="1.5" PointX="0.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="KepDataLoggerModel.PinskNS2_Level_TankLeak200_1" Width="1.5" PointX="2.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="KepDataLoggerModel.PinskNS2_Level_TankLeak200_2" Width="1.5" PointX="12.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="KepDataLoggerModel.PinskNS2_Level_TankLeak25" Width="1.5" PointX="4.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="KepDataLoggerModel.PinskScr_Level_TankLeak25" Width="1.5" PointX="12.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="KepDataLoggerModel.SIKN461_Level_TankLeak" Width="1.5" PointX="6.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="KepDataLoggerModel.TurovNS1_Level_TankLeak12" Width="1.5" PointX="8.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="KepDataLoggerModel.TurovNS2_Level_TankLeak200_1" Width="1.5" PointX="12.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="KepDataLoggerModel.TurovNS2_Level_TankLeak200_2" Width="1.5" PointX="14.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="KepDataLoggerModel.ZaschNS1_Level_TankLeak25" Width="1.5" PointX="14.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="KepDataLoggerModel.ZaschNS2_Level_TankLeak100_1" Width="1.5" PointX="14.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="KepDataLoggerModel.ZaschNS2_Level_TankLeak100_2" Width="1.5" PointX="14.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="KepDataLoggerModel.ZaschNS2_Level_TankLeak100_3" Width="1.5" PointX="14.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="KepDataLoggerModel.ZaschNS2_Level_TankLeak200_1" Width="1.5" PointX="0.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="KepDataLoggerModel.ZaschNS2_Level_TankLeak200_2" Width="1.5" PointX="2.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="KepDataLoggerModel.GomelNS1_Level_TankLeak100_1" Width="1.5" PointX="5.375" PointY="15.75" />
+        <EntityTypeShape EntityType="KepDataLoggerModel.GomelNS1_Level_TankLeak100_2" Width="1.5" PointX="7.375" PointY="15.75" />
+        <EntityTypeShape EntityType="KepDataLoggerModel.GomelNS1_Level_TankLeak400_1" Width="1.5" PointX="9.375" PointY="15.75" />
+        <EntityTypeShape EntityType="KepDataLoggerModel.GomelNS2_Level_TankLeak400_2" Width="1.5" PointX="11.375" PointY="15.75" />
+        <EntityTypeShape EntityType="KepDataLoggerModel.TurovNS2_Level_TankLeak25_1" Width="1.5" PointX="13.375" PointY="15.75" />
+        <EntityTypeShape EntityType="KepDataLoggerModel.TurovNS2_Level_TankLeak25_2" Width="1.5" PointX="15.375" PointY="15.75" />
+        <EntityTypeShape EntityType="KepDataLoggerModel.MozyrNS5_Level_TankLeak461_1" Width="1.5" PointX="11.375" PointY="9.75" />
+        <EntityTypeShape EntityType="KepDataLoggerModel.MozyrNS5_Level_TankLeak461_2" Width="1.5" PointX="17.375" PointY="0.75" />
+        <EntityTypeShape EntityType="KepDataLoggerModel.MozyrNS41_Level_TankLeakMA63" Width="1.5" PointX="17.375" PointY="3.75" />
+        <EntityTypeShape EntityType="KepDataLoggerModel.MozyrNS5_Level_TankLeak25" Width="1.5" PointX="17.375" PointY="6.75" />
+        <EntityTypeShape EntityType="KepDataLoggerModel.MozyrBK18_Tank_Level_19" Width="1.5" PointX="17.375" PointY="9.75" />
+        <EntityTypeShape EntityType="KepDataLoggerModel.MozyrBK18_Tank_Level_20" Width="1.5" PointX="17.375" PointY="12.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

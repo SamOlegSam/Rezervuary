@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="inventorModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="bacup1">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="tankid" Type="Int32" Nullable="false" />
+    <Property Name="oillevel" Type="Int32" Nullable="false" />
+    <Property Name="oilvolume" Type="Double" Nullable="false" />
+  </EntityType>
+  <EntityType Name="calibration">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="tankid" Type="Int32" Nullable="false" />
+    <Property Name="oillevel" Type="Int32" Nullable="false" />
+    <Property Name="oilvolume" Type="Double" Nullable="false" />
+  </EntityType>
+  <EntityType Name="inventarizations">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="invent_data" Type="DateTime" Precision="3" />
+    <Property Name="location_ID" Type="Int32" Nullable="false" />
+    <Property Name="tank_ID" Type="Int32" Nullable="false" />
+    <Property Name="tank_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="inventory_NUM" Type="Int32" />
+    <Property Name="point" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ofice" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="opc_TAG" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="value_m3" Type="Double" />
+    <Property Name="tech_min_mm" Type="Int32" />
+    <Property Name="tech_max_mm" Type="Int32" />
+    <Property Name="dirID_start" Type="Int32" />
+    <Property Name="dirID_end" Type="Int32" />
+    <Property Name="oil_level" Type="Int32" />
+    <Property Name="DateTime" Type="DateTime" Precision="3" />
+    <Property Name="volume20" Type="Double" />
+    <Property Name="temperature" Type="Double" />
+    <Property Name="density" Type="Double" />
+    <Property Name="volumeTrue" Type="Double" />
+    <Property Name="oilMass" Type="Double" />
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="location" Relationship="Self.FK_inventarizations_location" FromRole="inventarizations" ToRole="location" />
+  </EntityType>
+  <EntityType Name="InventoryM">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IDRez" Type="Int32" />
+    <Property Name="Date" Type="DateTime" Precision="3" />
+    <Property Name="Massa" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="Vol" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="UserDC" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+    <Property Name="Plotnost" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="Temper" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="V20" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="Uroven" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="LocID" Type="Int32" />
+    <Property Name="UrovH2O" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="VH2O" Type="Decimal" Precision="18" Scale="3" />
+    <Property Name="DateInv" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tanks" Relationship="Self.FK_InventoryM_tanks" FromRole="InventoryM" ToRole="tanks" />
+    <Property Name="RezNum" Type="Int32" />
+  </EntityType>
+  <EntityType Name="lnch_directions">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="sikn" Type="Int32" />
+  </EntityType>
+  <EntityType Name="location">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="inventarizations" Relationship="Self.FK_inventarizations_location" FromRole="location" ToRole="inventarizations" />
+    <NavigationProperty Name="Podpisanty" Relationship="Self.FK_Podpisanty_location" FromRole="location" ToRole="Podpisanty" />
+    <NavigationProperty Name="tanks" Relationship="Self.FK_tanks_location" FromRole="location" ToRole="tanks" />
+  </EntityType>
+  <EntityType Name="Podpisanty">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IDFilial" Type="Int32" />
+    <Property Name="Doljnost" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+    <Property Name="FIO" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+    <Property Name="Nazn" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+    <NavigationProperty Name="location" Relationship="Self.FK_Podpisanty_location" FromRole="Podpisanty" ToRole="location" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="tank_hour">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="tank_ID" Type="Int32" />
+    <Property Name="DateTime" Type="DateTime" Precision="3" />
+    <Property Name="oLevel" Type="Double" />
+    <Property Name="oTemper" Type="Double" />
+    <Property Name="oDensRef" Type="Double" />
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="tanks">
+    <Key>
+      <PropertyRef Name="tank_ID" />
+    </Key>
+    <Property Name="location_ID" Type="Int32" Nullable="false" />
+    <Property Name="tank_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="tank_NAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="inventory_NUM" Type="Int32" />
+    <Property Name="point" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ofice" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="opc_TAG" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="value_m3" Type="Double" />
+    <Property Name="tech_min_mm" Type="Int32" />
+    <Property Name="tech_max_mm" Type="Int32" />
+    <Property Name="type" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="dirID_start" Type="Int32" />
+    <Property Name="dirID_end" Type="Int32" />
+    <Property Name="techMinV" Type="Decimal" Precision="18" Scale="3" />
+    <NavigationProperty Name="InventoryM" Relationship="Self.FK_InventoryM_tanks" FromRole="tanks" ToRole="InventoryM" />
+    <NavigationProperty Name="location" Relationship="Self.FK_tanks_location" FromRole="tanks" ToRole="location" />
+  </EntityType>
+  <Association Name="FK_inventarizations_location">
+    <End Role="location" Type="Self.location" Multiplicity="1" />
+    <End Role="inventarizations" Type="Self.inventarizations" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="location">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="inventarizations">
+        <PropertyRef Name="location_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_InventoryM_tanks">
+    <End Role="tanks" Type="Self.tanks" Multiplicity="0..1" />
+    <End Role="InventoryM" Type="Self.InventoryM" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tanks">
+        <PropertyRef Name="tank_ID" />
+      </Principal>
+      <Dependent Role="InventoryM">
+        <PropertyRef Name="IDRez" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Podpisanty_location">
+    <End Role="location" Type="Self.location" Multiplicity="0..1" />
+    <End Role="Podpisanty" Type="Self.Podpisanty" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="location">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Podpisanty">
+        <PropertyRef Name="IDFilial" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tanks_location">
+    <End Role="location" Type="Self.location" Multiplicity="1" />
+    <End Role="tanks" Type="Self.tanks" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="location">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tanks">
+        <PropertyRef Name="location_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="inventorEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="bacup1" EntityType="Self.bacup1" />
+    <EntitySet Name="calibration" EntityType="Self.calibration" />
+    <EntitySet Name="inventarizations" EntityType="Self.inventarizations" />
+    <EntitySet Name="InventoryM" EntityType="Self.InventoryM" />
+    <EntitySet Name="lnch_directions" EntityType="Self.lnch_directions" />
+    <EntitySet Name="location" EntityType="Self.location" />
+    <EntitySet Name="Podpisanty" EntityType="Self.Podpisanty" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <EntitySet Name="tank_hour" EntityType="Self.tank_hour" />
+    <EntitySet Name="tanks" EntityType="Self.tanks" />
+    <AssociationSet Name="FK_inventarizations_location" Association="Self.FK_inventarizations_location">
+      <End Role="location" EntitySet="location" />
+      <End Role="inventarizations" EntitySet="inventarizations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_InventoryM_tanks" Association="Self.FK_InventoryM_tanks">
+      <End Role="tanks" EntitySet="tanks" />
+      <End Role="InventoryM" EntitySet="InventoryM" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Podpisanty_location" Association="Self.FK_Podpisanty_location">
+      <End Role="location" EntitySet="location" />
+      <End Role="Podpisanty" EntitySet="Podpisanty" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tanks_location" Association="Self.FK_tanks_location">
+      <End Role="location" EntitySet="location" />
+      <End Role="tanks" EntitySet="tanks" />
+    </AssociationSet>
+    <FunctionImport Name="getValByTable">
+      <Parameter Name="Tablename" Mode="In" Type="String" />
+      <Parameter Name="mydate" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="sp_alterdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_creatediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_dropdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagramdefinition" ReturnType="Collection(inventorModel.sp_helpdiagramdefinition_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagrams" ReturnType="Collection(inventorModel.sp_helpdiagrams_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_renamediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="new_diagramname" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_upgraddiagrams" />
+  </EntityContainer>
+  <ComplexType Name="sp_helpdiagramdefinition_Result">
+    <Property Type="Int32" Name="version" Nullable="true" />
+    <Property Type="Binary" Name="definition" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_helpdiagrams_Result">
+    <Property Type="String" Name="Database" Nullable="true" MaxLength="128" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="128" />
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
+    <Property Type="Int32" Name="OwnerID" Nullable="false" />
+  </ComplexType>
+</Schema>

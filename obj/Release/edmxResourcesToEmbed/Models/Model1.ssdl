@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище inventorModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="bacup1">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="tankid" Type="int" Nullable="false" />
+    <Property Name="oillevel" Type="int" Nullable="false" />
+    <Property Name="oilvolume" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="calibration">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="tankid" Type="int" Nullable="false" />
+    <Property Name="oillevel" Type="int" Nullable="false" />
+    <Property Name="oilvolume" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="inventarizations">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="invent_data" Type="datetime" />
+    <Property Name="location_ID" Type="int" Nullable="false" />
+    <Property Name="tank_ID" Type="int" Nullable="false" />
+    <Property Name="tank_NAME" Type="varchar" MaxLength="50" />
+    <Property Name="inventory_NUM" Type="int" />
+    <Property Name="point" Type="varchar" MaxLength="50" />
+    <Property Name="ofice" Type="varchar" MaxLength="10" />
+    <Property Name="opc_TAG" Type="varchar" MaxLength="50" />
+    <Property Name="value_m3" Type="float" />
+    <Property Name="tech_min_mm" Type="int" />
+    <Property Name="tech_max_mm" Type="int" />
+    <Property Name="dirID_start" Type="int" />
+    <Property Name="dirID_end" Type="int" />
+    <Property Name="oil_level" Type="int" />
+    <Property Name="DateTime" Type="datetime" />
+    <Property Name="volume20" Type="float" />
+    <Property Name="temperature" Type="float" />
+    <Property Name="density" Type="float" />
+    <Property Name="volumeTrue" Type="float" />
+    <Property Name="oilMass" Type="float" />
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="InventoryM">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IDRez" Type="int" />
+    <Property Name="Date" Type="datetime" />
+    <Property Name="Massa" Type="decimal" Precision="18" Scale="3" />
+    <Property Name="Vol" Type="decimal" Precision="18" Scale="3" />
+    <Property Name="UserDC" Type="nchar" MaxLength="50" />
+    <Property Name="Plotnost" Type="decimal" Precision="18" Scale="3" />
+    <Property Name="Temper" Type="decimal" Precision="18" Scale="3" />
+    <Property Name="V20" Type="decimal" Precision="18" Scale="3" />
+    <Property Name="Uroven" Type="decimal" Precision="18" Scale="3" />
+    <Property Name="LocID" Type="int" />
+    <Property Name="UrovH2O" Type="decimal" Precision="18" Scale="3" />
+    <Property Name="VH2O" Type="decimal" Precision="18" Scale="3" />
+    <Property Name="DateInv" Type="datetime" />
+    <Property Name="RezNum" Type="int" />
+  </EntityType>
+  <EntityType Name="lnch_directions">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="64" />
+    <Property Name="sikn" Type="int" />
+  </EntityType>
+  <EntityType Name="location">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Podpisanty">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IDFilial" Type="int" />
+    <Property Name="Doljnost" Type="nchar" MaxLength="50" />
+    <Property Name="FIO" Type="nchar" MaxLength="50" />
+    <Property Name="Nazn" Type="nchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="tank_hour">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="tank_ID" Type="int" />
+    <Property Name="DateTime" Type="datetime" />
+    <Property Name="oLevel" Type="float" />
+    <Property Name="oTemper" Type="float" />
+    <Property Name="oDensRef" Type="float" />
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tanks">
+    <Key>
+      <PropertyRef Name="tank_ID" />
+    </Key>
+    <Property Name="location_ID" Type="int" Nullable="false" />
+    <Property Name="tank_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="tank_NAME" Type="varchar" MaxLength="50" />
+    <Property Name="inventory_NUM" Type="int" />
+    <Property Name="point" Type="varchar" MaxLength="50" />
+    <Property Name="ofice" Type="varchar" MaxLength="10" />
+    <Property Name="opc_TAG" Type="varchar" MaxLength="50" />
+    <Property Name="value_m3" Type="float" />
+    <Property Name="tech_min_mm" Type="int" />
+    <Property Name="tech_max_mm" Type="int" />
+    <Property Name="type" Type="varchar" MaxLength="50" />
+    <Property Name="dirID_start" Type="int" />
+    <Property Name="dirID_end" Type="int" />
+    <Property Name="techMinV" Type="decimal" Precision="18" Scale="3" />
+  </EntityType>
+  <Association Name="FK_inventarizations_location">
+    <End Role="location" Type="Self.location" Multiplicity="1" />
+    <End Role="inventarizations" Type="Self.inventarizations" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="location">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="inventarizations">
+        <PropertyRef Name="location_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_InventoryM_tanks">
+    <End Role="tanks" Type="Self.tanks" Multiplicity="0..1" />
+    <End Role="InventoryM" Type="Self.InventoryM" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tanks">
+        <PropertyRef Name="tank_ID" />
+      </Principal>
+      <Dependent Role="InventoryM">
+        <PropertyRef Name="IDRez" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Podpisanty_location">
+    <End Role="location" Type="Self.location" Multiplicity="0..1" />
+    <End Role="Podpisanty" Type="Self.Podpisanty" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="location">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Podpisanty">
+        <PropertyRef Name="IDFilial" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tanks_location">
+    <End Role="location" Type="Self.location" Multiplicity="1" />
+    <End Role="tanks" Type="Self.tanks" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="location">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tanks">
+        <PropertyRef Name="location_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="fn_diagramobjects" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int" />
+  <Function Name="getValByTable" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Tablename" Type="varchar" Mode="In" />
+    <Parameter Name="mydate" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="getValueByTable" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="float">
+    <Parameter Name="Tablename" Type="varchar" Mode="In" />
+    <Parameter Name="mydate" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_creatediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagramdefinition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_renamediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <EntityContainer Name="Хранилище inventorModelContainer">
+    <EntitySet Name="bacup1" EntityType="Self.bacup1" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="calibration" EntityType="Self.calibration" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="inventarizations" EntityType="Self.inventarizations" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="InventoryM" EntityType="Self.InventoryM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="lnch_directions" EntityType="Self.lnch_directions" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="location" EntityType="Self.location" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Podpisanty" EntityType="Self.Podpisanty" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tank_hour" EntityType="Self.tank_hour" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tanks" EntityType="Self.tanks" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_inventarizations_location" Association="Self.FK_inventarizations_location">
+      <End Role="location" EntitySet="location" />
+      <End Role="inventarizations" EntitySet="inventarizations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_InventoryM_tanks" Association="Self.FK_InventoryM_tanks">
+      <End Role="tanks" EntitySet="tanks" />
+      <End Role="InventoryM" EntitySet="InventoryM" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Podpisanty_location" Association="Self.FK_Podpisanty_location">
+      <End Role="location" EntitySet="location" />
+      <End Role="Podpisanty" EntitySet="Podpisanty" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tanks_location" Association="Self.FK_tanks_location">
+      <End Role="location" EntitySet="location" />
+      <End Role="tanks" EntitySet="tanks" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,495 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище KepDataLoggerModelContainer" CdmEntityContainer="KepDataLoggerEntities">
+    <EntitySetMapping Name="GomelNS1_Level_Tank100_1">
+      <EntityTypeMapping TypeName="KepDataLoggerModel.GomelNS1_Level_Tank100_1">
+        <MappingFragment StoreEntitySet="GomelNS1_Level_Tank100_1">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="dt" ColumnName="dt" />
+          <ScalarProperty Name="quality" ColumnName="quality" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GomelNS1_Level_Tank100_2">
+      <EntityTypeMapping TypeName="KepDataLoggerModel.GomelNS1_Level_Tank100_2">
+        <MappingFragment StoreEntitySet="GomelNS1_Level_Tank100_2">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="dt" ColumnName="dt" />
+          <ScalarProperty Name="quality" ColumnName="quality" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GomelNS1_Level_Tank400_1">
+      <EntityTypeMapping TypeName="KepDataLoggerModel.GomelNS1_Level_Tank400_1">
+        <MappingFragment StoreEntitySet="GomelNS1_Level_Tank400_1">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="dt" ColumnName="dt" />
+          <ScalarProperty Name="quality" ColumnName="quality" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GomelNS1_Level_TankLeak12">
+      <EntityTypeMapping TypeName="KepDataLoggerModel.GomelNS1_Level_TankLeak12">
+        <MappingFragment StoreEntitySet="GomelNS1_Level_TankLeak12">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="dt" ColumnName="dt" />
+          <ScalarProperty Name="quality" ColumnName="quality" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GomelNS1_Level_TankLeak20">
+      <EntityTypeMapping TypeName="KepDataLoggerModel.GomelNS1_Level_TankLeak20">
+        <MappingFragment StoreEntitySet="GomelNS1_Level_TankLeak20">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="dt" ColumnName="dt" />
+          <ScalarProperty Name="quality" ColumnName="quality" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GomelNS2_Level_Tank400_2">
+      <EntityTypeMapping TypeName="KepDataLoggerModel.GomelNS2_Level_Tank400_2">
+        <MappingFragment StoreEntitySet="GomelNS2_Level_Tank400_2">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="dt" ColumnName="dt" />
+          <ScalarProperty Name="quality" ColumnName="quality" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GomelNS2_Level_TankLeak40_1">
+      <EntityTypeMapping TypeName="KepDataLoggerModel.GomelNS2_Level_TankLeak40_1">
+        <MappingFragment StoreEntitySet="GomelNS2_Level_TankLeak40_1">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="dt" ColumnName="dt" />
+          <ScalarProperty Name="quality" ColumnName="quality" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GomelNS2_Level_TankLeak40_2">
+      <EntityTypeMapping TypeName="KepDataLoggerModel.GomelNS2_Level_TankLeak40_2">
+        <MappingFragment StoreEntitySet="GomelNS2_Level_TankLeak40_2">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="dt" ColumnName="dt" />
+          <ScalarProperty Name="quality" ColumnName="quality" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GomelScr_Level_TankLeak30">
+      <EntityTypeMapping TypeName="KepDataLoggerModel.GomelScr_Level_TankLeak30">
+        <MappingFragment StoreEntitySet="GomelScr_Level_TankLeak30">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="dt" ColumnName="dt" />
+          <ScalarProperty Name="quality" ColumnName="quality" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GorkiNS2_Level_TankLeak25_1">
+      <EntityTypeMapping TypeName="KepDataLoggerModel.GorkiNS2_Level_TankLeak25_1">
+        <MappingFragment StoreEntitySet="GorkiNS2_Level_TankLeak25_1">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="dt" ColumnName="dt" />
+          <ScalarProperty Name="quality" ColumnName="quality" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GorkiNS2_Level_TankLeak25_2">
+      <EntityTypeMapping TypeName="KepDataLoggerModel.GorkiNS2_Level_TankLeak25_2">
+        <MappingFragment StoreEntitySet="GorkiNS2_Level_TankLeak25_2">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="dt" ColumnName="dt" />
+          <ScalarProperty Name="quality" ColumnName="quality" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KobrinNS1_Level_TankLeak12">
+      <EntityTypeMapping TypeName="KepDataLoggerModel.KobrinNS1_Level_TankLeak12">
+        <MappingFragment StoreEntitySet="KobrinNS1_Level_TankLeak12">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="dt" ColumnName="dt" />
+          <ScalarProperty Name="quality" ColumnName="quality" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KobrinNS2_Level_TankLeak100_1">
+      <EntityTypeMapping TypeName="KepDataLoggerModel.KobrinNS2_Level_TankLeak100_1">
+        <MappingFragment StoreEntitySet="KobrinNS2_Level_TankLeak100_1">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="dt" ColumnName="dt" />
+          <ScalarProperty Name="quality" ColumnName="quality" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KobrinNS2_Level_TankLeak100_2">
+      <EntityTypeMapping TypeName="KepDataLoggerModel.KobrinNS2_Level_TankLeak100_2">
+        <MappingFragment StoreEntitySet="KobrinNS2_Level_TankLeak100_2">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="dt" ColumnName="dt" />
+          <ScalarProperty Name="quality" ColumnName="quality" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KobrinNS2_Level_TankLeak200_1">
+      <EntityTypeMapping TypeName="KepDataLoggerModel.KobrinNS2_Level_TankLeak200_1">
+        <MappingFragment StoreEntitySet="KobrinNS2_Level_TankLeak200_1">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="dt" ColumnName="dt" />
+          <ScalarProperty Name="quality" ColumnName="quality" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KobrinNS2_Level_TankLeak200_2">
+      <EntityTypeMapping TypeName="KepDataLoggerModel.KobrinNS2_Level_TankLeak200_2">
+        <MappingFragment StoreEntitySet="KobrinNS2_Level_TankLeak200_2">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="dt" ColumnName="dt" />
+          <ScalarProperty Name="quality" ColumnName="quality" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MozAdam_km441_Level_Leak25">
+      <EntityTypeMapping TypeName="KepDataLoggerModel.MozAdam_km441_Level_Leak25">
+        <MappingFragment StoreEntitySet="MozAdam_km441_Level_Leak25">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="dt" ColumnName="dt" />
+          <ScalarProperty Name="quality" ColumnName="quality" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MozyrBK1_Level_TankLeak25_Scr4">
+      <EntityTypeMapping TypeName="KepDataLoggerModel.MozyrBK1_Level_TankLeak25_Scr4">
+        <MappingFragment StoreEntitySet="MozyrBK1_Level_TankLeak25_Scr4">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="dt" ColumnName="dt" />
+          <ScalarProperty Name="quality" ColumnName="quality" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MozyrNS2_Level_TanlLeak1_2">
+      <EntityTypeMapping TypeName="KepDataLoggerModel.MozyrNS2_Level_TanlLeak1_2">
+        <MappingFragment StoreEntitySet="MozyrNS2_Level_TanlLeak1-2">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="dt" ColumnName="dt" />
+          <ScalarProperty Name="quality" ColumnName="quality" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MozyrNS2_Level_TanlLeak25">
+      <EntityTypeMapping TypeName="KepDataLoggerModel.MozyrNS2_Level_TanlLeak25">
+        <MappingFragment StoreEntitySet="MozyrNS2_Level_TanlLeak25">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="dt" ColumnName="dt" />
+          <ScalarProperty Name="quality" ColumnName="quality" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MozyrNS3_Level_TankLeak47">
+      <EntityTypeMapping TypeName="KepDataLoggerModel.MozyrNS3_Level_TankLeak47">
+        <MappingFragment StoreEntitySet="MozyrNS3_Level_TankLeak47">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="dt" ColumnName="dt" />
+          <ScalarProperty Name="quality" ColumnName="quality" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MozyrNS41_Level_TankLeak63">
+      <EntityTypeMapping TypeName="KepDataLoggerModel.MozyrNS41_Level_TankLeak63">
+        <MappingFragment StoreEntitySet="MozyrNS41_Level_TankLeak63">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="dt" ColumnName="dt" />
+          <ScalarProperty Name="quality" ColumnName="quality" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PinskNS1_Level_TankLeak40">
+      <EntityTypeMapping TypeName="KepDataLoggerModel.PinskNS1_Level_TankLeak40">
+        <MappingFragment StoreEntitySet="PinskNS1_Level_TankLeak40">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="dt" ColumnName="dt" />
+          <ScalarProperty Name="quality" ColumnName="quality" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PinskNS2_Level_TankLeak200_1">
+      <EntityTypeMapping TypeName="KepDataLoggerModel.PinskNS2_Level_TankLeak200_1">
+        <MappingFragment StoreEntitySet="PinskNS2_Level_TankLeak200_1">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="dt" ColumnName="dt" />
+          <ScalarProperty Name="quality" ColumnName="quality" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PinskNS2_Level_TankLeak200_2">
+      <EntityTypeMapping TypeName="KepDataLoggerModel.PinskNS2_Level_TankLeak200_2">
+        <MappingFragment StoreEntitySet="PinskNS2_Level_TankLeak200_2">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="dt" ColumnName="dt" />
+          <ScalarProperty Name="quality" ColumnName="quality" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PinskNS2_Level_TankLeak25">
+      <EntityTypeMapping TypeName="KepDataLoggerModel.PinskNS2_Level_TankLeak25">
+        <MappingFragment StoreEntitySet="PinskNS2_Level_TankLeak25">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="dt" ColumnName="dt" />
+          <ScalarProperty Name="quality" ColumnName="quality" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PinskScr_Level_TankLeak25">
+      <EntityTypeMapping TypeName="KepDataLoggerModel.PinskScr_Level_TankLeak25">
+        <MappingFragment StoreEntitySet="PinskScr_Level_TankLeak25">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="dt" ColumnName="dt" />
+          <ScalarProperty Name="quality" ColumnName="quality" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SIKN461_Level_TankLeak">
+      <EntityTypeMapping TypeName="KepDataLoggerModel.SIKN461_Level_TankLeak">
+        <MappingFragment StoreEntitySet="SIKN461_Level_TankLeak">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="dt" ColumnName="dt" />
+          <ScalarProperty Name="quality" ColumnName="quality" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TurovNS1_Level_TankLeak12">
+      <EntityTypeMapping TypeName="KepDataLoggerModel.TurovNS1_Level_TankLeak12">
+        <MappingFragment StoreEntitySet="TurovNS1_Level_TankLeak12">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="dt" ColumnName="dt" />
+          <ScalarProperty Name="quality" ColumnName="quality" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TurovNS2_Level_TankLeak200_1">
+      <EntityTypeMapping TypeName="KepDataLoggerModel.TurovNS2_Level_TankLeak200_1">
+        <MappingFragment StoreEntitySet="TurovNS2_Level_TankLeak200_1">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="dt" ColumnName="dt" />
+          <ScalarProperty Name="quality" ColumnName="quality" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TurovNS2_Level_TankLeak200_2">
+      <EntityTypeMapping TypeName="KepDataLoggerModel.TurovNS2_Level_TankLeak200_2">
+        <MappingFragment StoreEntitySet="TurovNS2_Level_TankLeak200_2">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="dt" ColumnName="dt" />
+          <ScalarProperty Name="quality" ColumnName="quality" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ZaschNS1_Level_TankLeak25">
+      <EntityTypeMapping TypeName="KepDataLoggerModel.ZaschNS1_Level_TankLeak25">
+        <MappingFragment StoreEntitySet="ZaschNS1_Level_TankLeak25">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="dt" ColumnName="dt" />
+          <ScalarProperty Name="quality" ColumnName="quality" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ZaschNS2_Level_TankLeak100_1">
+      <EntityTypeMapping TypeName="KepDataLoggerModel.ZaschNS2_Level_TankLeak100_1">
+        <MappingFragment StoreEntitySet="ZaschNS2_Level_TankLeak100_1">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="dt" ColumnName="dt" />
+          <ScalarProperty Name="quality" ColumnName="quality" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ZaschNS2_Level_TankLeak100_2">
+      <EntityTypeMapping TypeName="KepDataLoggerModel.ZaschNS2_Level_TankLeak100_2">
+        <MappingFragment StoreEntitySet="ZaschNS2_Level_TankLeak100_2">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="dt" ColumnName="dt" />
+          <ScalarProperty Name="quality" ColumnName="quality" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ZaschNS2_Level_TankLeak100_3">
+      <EntityTypeMapping TypeName="KepDataLoggerModel.ZaschNS2_Level_TankLeak100_3">
+        <MappingFragment StoreEntitySet="ZaschNS2_Level_TankLeak100_3">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="dt" ColumnName="dt" />
+          <ScalarProperty Name="quality" ColumnName="quality" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ZaschNS2_Level_TankLeak200_1">
+      <EntityTypeMapping TypeName="KepDataLoggerModel.ZaschNS2_Level_TankLeak200_1">
+        <MappingFragment StoreEntitySet="ZaschNS2_Level_TankLeak200_1">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="dt" ColumnName="dt" />
+          <ScalarProperty Name="quality" ColumnName="quality" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ZaschNS2_Level_TankLeak200_2">
+      <EntityTypeMapping TypeName="KepDataLoggerModel.ZaschNS2_Level_TankLeak200_2">
+        <MappingFragment StoreEntitySet="ZaschNS2_Level_TankLeak200_2">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="dt" ColumnName="dt" />
+          <ScalarProperty Name="quality" ColumnName="quality" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GomelNS1_Level_TankLeak100_1">
+      <EntityTypeMapping TypeName="KepDataLoggerModel.GomelNS1_Level_TankLeak100_1">
+        <MappingFragment StoreEntitySet="GomelNS1_Level_TankLeak100_1">
+          <ScalarProperty Name="quality" ColumnName="quality" />
+          <ScalarProperty Name="dt" ColumnName="dt" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GomelNS1_Level_TankLeak100_2">
+      <EntityTypeMapping TypeName="KepDataLoggerModel.GomelNS1_Level_TankLeak100_2">
+        <MappingFragment StoreEntitySet="GomelNS1_Level_TankLeak100_2">
+          <ScalarProperty Name="quality" ColumnName="quality" />
+          <ScalarProperty Name="dt" ColumnName="dt" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GomelNS1_Level_TankLeak400_1">
+      <EntityTypeMapping TypeName="KepDataLoggerModel.GomelNS1_Level_TankLeak400_1">
+        <MappingFragment StoreEntitySet="GomelNS1_Level_TankLeak400_1">
+          <ScalarProperty Name="quality" ColumnName="quality" />
+          <ScalarProperty Name="dt" ColumnName="dt" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GomelNS2_Level_TankLeak400_2">
+      <EntityTypeMapping TypeName="KepDataLoggerModel.GomelNS2_Level_TankLeak400_2">
+        <MappingFragment StoreEntitySet="GomelNS2_Level_TankLeak400_2">
+          <ScalarProperty Name="quality" ColumnName="quality" />
+          <ScalarProperty Name="dt" ColumnName="dt" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TurovNS2_Level_TankLeak25_1">
+      <EntityTypeMapping TypeName="KepDataLoggerModel.TurovNS2_Level_TankLeak25_1">
+        <MappingFragment StoreEntitySet="TurovNS2_Level_TankLeak25_1">
+          <ScalarProperty Name="quality" ColumnName="quality" />
+          <ScalarProperty Name="dt" ColumnName="dt" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TurovNS2_Level_TankLeak25_2">
+      <EntityTypeMapping TypeName="KepDataLoggerModel.TurovNS2_Level_TankLeak25_2">
+        <MappingFragment StoreEntitySet="TurovNS2_Level_TankLeak25_2">
+          <ScalarProperty Name="quality" ColumnName="quality" />
+          <ScalarProperty Name="dt" ColumnName="dt" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MozyrNS5_Level_TankLeak461_1">
+      <EntityTypeMapping TypeName="KepDataLoggerModel.MozyrNS5_Level_TankLeak461_1">
+        <MappingFragment StoreEntitySet="MozyrNS5_Level_TankLeak461_1">
+          <ScalarProperty Name="quality" ColumnName="quality" />
+          <ScalarProperty Name="dt" ColumnName="dt" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MozyrNS5_Level_TankLeak461_2">
+      <EntityTypeMapping TypeName="KepDataLoggerModel.MozyrNS5_Level_TankLeak461_2">
+        <MappingFragment StoreEntitySet="MozyrNS5_Level_TankLeak461_2">
+          <ScalarProperty Name="quality" ColumnName="quality" />
+          <ScalarProperty Name="dt" ColumnName="dt" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MozyrNS41_Level_TankLeakMA63">
+      <EntityTypeMapping TypeName="KepDataLoggerModel.MozyrNS41_Level_TankLeakMA63">
+        <MappingFragment StoreEntitySet="MozyrNS41_Level_TankLeakMA63">
+          <ScalarProperty Name="quality" ColumnName="quality" />
+          <ScalarProperty Name="dt" ColumnName="dt" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MozyrNS5_Level_TankLeak25">
+      <EntityTypeMapping TypeName="KepDataLoggerModel.MozyrNS5_Level_TankLeak25">
+        <MappingFragment StoreEntitySet="MozyrNS5_Level_TankLeak25">
+          <ScalarProperty Name="quality" ColumnName="quality" />
+          <ScalarProperty Name="dt" ColumnName="dt" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MozyrBK18_Tank_Level_19">
+      <EntityTypeMapping TypeName="KepDataLoggerModel.MozyrBK18_Tank_Level_19">
+        <MappingFragment StoreEntitySet="MozyrBK18_Tank_Level_19">
+          <ScalarProperty Name="quality" ColumnName="quality" />
+          <ScalarProperty Name="dt" ColumnName="dt" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MozyrBK18_Tank_Level_20">
+      <EntityTypeMapping TypeName="KepDataLoggerModel.MozyrBK18_Tank_Level_20">
+        <MappingFragment StoreEntitySet="MozyrBK18_Tank_Level_20">
+          <ScalarProperty Name="quality" ColumnName="quality" />
+          <ScalarProperty Name="dt" ColumnName="dt" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

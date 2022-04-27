@@ -1,0 +1,36 @@
+﻿@model Reservuary.Models.InventoryM
+@*@model Reservuary.Models.Podpisanty*@
+
+<div class="modal-header" style="text-align: center; background-color: #D0EDFE; border-radius:5px;">
+    <h5> Редактирование Инвенторизации</h5>
+</div>
+<div class="modal-body">
+
+    @*<label>ID записи</label>*@
+    <input type="hidden" class="form-control btn-block" id="ID" value="@Model.ID" />
+
+    <label>Резервуар</label>
+    <input type="text" class="form-control btn-block" id="IDRez" value="@Model.tanks.tank_NAME" />
+
+    <label>Пользователь</label>
+    <input type="text" class="form-control btn-block" id="UserDC" value="@Model.UserDC" />
+
+    <label>Уровень нефти</label>
+    <input type="text" class="form-control btn-block" id="Uroven" value="@Model.Uroven" />
+
+    <label>Объем нефти</label>
+    <input type="text" class="form-control btn-block" id="V20" value="@Model.V20" />
+        
+    <label>Уровень подтоварной воды</label>
+    <input type="text" class="form-control btn-block" id="UrovH2O" value="@Model.UrovH2O" />
+
+    <label>Объем подтоварной воды</label>
+    <input type="text" class="form-control btn-block" id="VH2O" value="@Model.VH2O" />
+
+</div>
+<div class="modal-footer" style="text-align:center">
+    <button type="submit" class="btn btn-info" style="min-width:100px" onclick="InventoryEditSave(@Model.ID)">Сохранить</button>
+    <button type="button" class="btn btn-default" data-dismiss="modal" style="min-width:100px">Отмена</button>
+</div>
+
+

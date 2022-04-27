@@ -1,0 +1,61 @@
+﻿@model IEnumerable<Reservuary.Models.InventoryM>
+<table class="table" id="tabb">
+
+    @{
+        int u = 0;
+    }
+
+    @foreach (var item in ViewBag.inventTurov)
+    {
+        u++;
+
+        <tr tr class="odd">
+            <td>
+                <input type="hidden" class="form-control btn-block" id="LocID_@u" value="@item.LocID">
+            </td>
+            <td>
+                <input type="hidden" class="form-control btn-block" id="ID_@u" value="@item.IDRez">
+            </td>
+            @*<td width="20%">
+                    <input type="text" class="form-control btn-block" id="ID_@u" value="@item.TANKNAME">
+                </td>*@
+            <td width="8%">
+                @item.DateInv.ToShortDateString()
+                @*<input type="text" class="form-control btn-block" id="Uroven_@u" value="@item.Uroven" onkeyup="this.value = this.value.replace(/[^(0-9)(,)]/,'');">*@
+            </td>
+            <td width="8%">
+                @item.UserDC
+                @*<input type="text" class="form-control btn-block" id="Uroven_@u" value="@item.Uroven" onkeyup="this.value = this.value.replace(/[^(0-9)(,)]/,'');">*@
+            </td>
+            <td width="24%">
+                @item.tanks.tank_NAME
+            </td>
+            <td width="8%">
+                @item.Uroven
+            </td>
+            <td width="8%">
+                @item.UrovH2O
+            </td>
+            <td width="8%">
+                @item.V20
+            </td>
+            <td width="8%">
+                @item.VH2O
+            </td>
+            <td width="8%">
+                @item.V20
+            </td>
+            <td width="8%">
+                @item.tanks.tech_min_mm
+            </td>
+            <td width="8%">
+                @item.tanks.techMinV
+            </td>
+
+            <td width="4%">
+                <button type="button" onclick="InventoryEdit(@item.ID)" class="btn btn-icon waves-effect waves-light btn-info"><span class="glyphicon glyphicon-pencil"></span></button>
+            </td>
+
+        </tr>
+    }
+</table>

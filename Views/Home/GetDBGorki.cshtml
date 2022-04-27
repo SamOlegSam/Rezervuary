@@ -1,0 +1,147 @@
+﻿<table class="table">
+    <tr>
+        <th>
+
+        </th>
+        <th>
+
+        </th>
+        <th>
+
+        </th>
+        <th>
+
+        </th>
+        <th width="30%">
+            Резервуары
+        </th>
+        <th width="10%">
+            Общий уровень нефти, (мм)
+        </th>
+        <th width="10%">
+            Уровень подтоварной воды, <sup><i>3</i></sup>
+        </th>
+        <th width="10%">
+            Общий объем, (м<sup><i>3</i></sup>)
+        </th>
+        <th width="10%">
+            Объём подтоварной воды, (м<sup><i>3</i></sup>)
+        </th>
+        <th width="10%">
+            Объем нефти, (м<sup><i>3</i></sup>)
+        </th>
+        <th width="10%">
+            Минимально допустимый уровень, (мм)
+        </th>
+        <th width="10%">
+            Минимально допустимый объём, (м<sup><i>3</i></sup>)
+        </th>
+    </tr>
+</table>
+
+<table class="table" id="tabb">
+
+    @{
+        int u = 0;
+    }
+
+    @foreach (var item in ViewBag.TabGorki)
+    {
+        u++;
+        <tr tr class="odd">
+            <td>
+                <input type="hidden" class="form-control btn-block" id="LocID_@u" value="@item.LOCAT">
+            </td>
+            <td>
+                <input type="hidden" class="form-control btn-block" id="ID_@u" value="@item.tankID">
+            </td>
+            <td>
+                <input type="hidden" class="form-control btn-block" id="User_@u" value="@System.Security.Principal.WindowsIdentity.GetCurrent().Name.Trim()">
+            </td>
+            <td>
+                <input type="hidden" class="form-control btn-block" id="tankName_@u" value="@item.OPCTAG">
+            </td>
+            <td width="30%">
+                @item.TANKNAME
+            </td>
+            <td width="10%">
+                <input type="text" class="form-control btn-block" id="Urovenn_@u" value="@item.UROVEN" onkeyup="this.value = this.value.replace(/[^(0-9)(,)]/,'');">
+            </td>
+            <td width="10%" id="test">
+                <input type="text" class="form-control btn-block" id="UrovH2O_@u" value=0 onkeyup="this.value = this.value.replace(/[^(0-9)(,)]/,'');">
+            </td>
+            <td width="10%">
+                <input type="text" class="form-control btn-block" id="V20_@u" value="@item.V" onkeyup="this.value = this.value.replace(/[^(0-9)(,)]/,'');">
+            </td>
+            <td width="10%">
+                <input type="text" class="form-control btn-block" id="VH2O_@u" value=0 onkeyup="this.value = this.value.replace(/[^(0-9)(,)]/,'');">
+            </td>
+            <td width="10%">
+                <input type="text" class="form-control btn-block" id="VITOG_@u" value="@item.V" onkeyup="this.value = this.value.replace(/[^(0-9)(,)]/,'');">
+            </td>
+            <td width="10%">
+                @item.minU
+            </td>
+            <td width="10%">
+                @item.minV
+            </td>
+
+        </tr>
+    }
+</table>
+
+<script>
+
+    $(function d() {
+        tabb.addEventListener('change', function (e) {
+
+            var pref = e.target.id.substring(7);
+            var resName = $('#tankName' + pref).val();
+
+            var data = {
+
+                'ID': e.target.id,
+                'Urov': e.target.value,
+                'resName': resName
+
+            };
+            $.ajax({
+                url: "/Home/GetUrovGorki",
+                type: "POST",
+                contentType: "application/json;charset=UTF-8",
+                data: JSON.stringify(data),
+                dataType: "html",
+                success: function (result) {
+                    if (e.target.id.toString().substring(0, 6) == "UrovH2") {
+                        $('#VH2O' + e.target.id.toString().substring(7)).val(result);
+                        var oldV = $('#V20' + e.target.id.toString().substring(7)).val();
+                        var res = oldV.toString().replace(',', '.');
+                        const NUMres = Number(res);
+                        const tar = (result).toString().replace(',', '.');
+                        var NUMtar = Number(tar);
+                        var sum = (NUMres - NUMtar).toString().replace('.', ',');
+                        $('#VITOG' + e.target.id.toString().substring(7)).val(sum);
+                    }
+                    if (e.target.id.toString().substring(0, 6) == "Uroven") {
+                        $('#V20' + e.target.id.toString().substring(7)).val(result);
+                        var oldV = $('#V20' + e.target.id.toString().substring(7)).val();
+                        var res = oldV.toString().replace(',', '.');
+                        const NUMres = Number(res);
+                        var VH2OV = $('#VH2O' + e.target.id.toString().substring(7)).val();
+                        var VH2OVVV = VH2OV.toString().replace(',', '.');
+                        var VH2OVV = Number(VH2OVVV);
+                        const tar = (result).toString().replace(',', '.');
+                        var NUMtar = Number(tar);
+                        var sum = (NUMres - VH2OVV).toString().replace('.', ',');
+                        $('#VITOG' + e.target.id.toString().substring(7)).val(sum);
+                    }
+                    console.log('VH2OVV', VH2OVV);
+                },
+                error: function (errormessage) {
+                    alert(errormessage.responseText);
+                }
+            });
+        });
+    })
+
+</script>

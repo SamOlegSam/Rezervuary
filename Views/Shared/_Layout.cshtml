@@ -1,0 +1,179 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Впомогательные емкости</title>
+
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+</head>
+<body class="grad">
+
+    <style>
+        .grad {
+            background-image: url(/Image/fon.jpg);
+            /*background-repeat: round;*/
+        }
+
+        li {
+            display: block;
+            transition-duration: 0.5s;
+        }
+
+            li:hover {
+                cursor: pointer;
+            }
+
+        ul li ul {
+            visibility: hidden;
+            opacity: 0;
+            position: absolute;
+            transition: all 0.5s ease;
+            margin-top: 1rem;
+            left: 0;
+            display: none;
+        }
+
+            ul li:hover > ul,
+            ul li ul:hover {
+                visibility: visible;
+                opacity: 1;
+                display: block;
+            }
+
+            ul li ul li {
+                clear: both;
+                width: 100%;
+            }
+                    
+    
+    </style>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @*@Html.ActionLink("Имя приложения", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })*@
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Главная", "Index", "Home")</li>
+                    @*<li>@Html.ActionLink("Гомель", "Gomel", "Home")</li>
+        <li>@Html.ActionLink("Защебье", "Zaschebe", "Home")</li>
+        <li>@Html.ActionLink("Мозырь", "Mozyr", "Home")</li>
+        <li>@Html.ActionLink("Туров", "Turov", "Home")</li>
+        <li>@Html.ActionLink("Пинск", "Pinsk", "Home")</li>
+        <li>@Html.ActionLink("Кобрин", "Kobrin", "Home")</li>
+        <li>@Html.ActionLink("Новополоцк", "Novopolock", "Home")</li>
+        <li>@Html.ActionLink("Горки", "Gorki", "Home")</li>
+        <li>@Html.ActionLink("Подписанты", "Podpisanty", "Home")</li>*@
+
+                    <li>
+                        <a href="#">Гомель</a>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                            <li>@Html.ActionLink("Ввод данных", "Gomel", "Home")</li>
+                            <li>@Html.ActionLink("Инвентаризация", "InventorizGomel", "Home")</li>
+
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#">Защебье</a>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                            <li>@Html.ActionLink("Ввод данных", "Zaschebe", "Home")</li>
+                            <li>@Html.ActionLink("Инвентаризация", "InventorizZaschebe", "Home")</li>
+
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#">Мозырь</a>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                            <li>@Html.ActionLink("Ввод данных", "Mozyr", "Home")</li>
+                            <li>@Html.ActionLink("Инвентаризация", "InventorizMozyr", "Home")</li>
+
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#">Туров</a>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                            <li>@Html.ActionLink("Ввод данных", "Turov", "Home")</li>
+                            <li>@Html.ActionLink("Инвентаризация", "InventorizTurov", "Home")</li>
+
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#">Пинск</a>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                            <li>@Html.ActionLink("Ввод данных", "Pinsk", "Home")</li>
+                            <li>@Html.ActionLink("Инвентаризация", "InventorizPinsk", "Home")</li>
+
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#">Кобрин</a>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                            <li>@Html.ActionLink("Ввод данных", "Kobrin", "Home")</li>
+                            <li>@Html.ActionLink("Инвентаризация", "InventorizKobrin", "Home")</li>
+
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#">Новополоцк</a>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                            <li>@Html.ActionLink("Ввод данных", "Novopolock", "Home")</li>
+                            <li>@Html.ActionLink("Инвентаризация", "InventorizNovopolock", "Home")</li>
+
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#">Горки</a>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                            <li>@Html.ActionLink("Ввод данных", "Gorki", "Home")</li>
+                            <li>@Html.ActionLink("Инвентаризация", "InventorizGorki", "Home")</li>
+
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#">Комиссия</a>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                            <li>@Html.ActionLink("НПС Гомель", "podpisantyGomel", "Home")</li>
+                            <li>@Html.ActionLink("НПС Защебье", "podpisantyZasch", "Home")</li>
+                            <li>@Html.ActionLink("ЛПДС Мозырь", "podpisantyMozyr", "Home")</li>
+                            <li>@Html.ActionLink("НПС Туров", "podpisantyTurov", "Home")</li>
+                            <li>@Html.ActionLink("НПС Пинск", "podpisantyPinsk", "Home")</li>
+                            <li>@Html.ActionLink("НПС Кобрин", "podpisantyKobrin", "Home")</li>
+                            <li>@Html.ActionLink("ФПТН Новополоцк", "podpisantyNovop", "Home")</li>
+                            <li>@Html.ActionLink("НПС Горки", "podpisantyGorki", "Home")</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Вспомогательные емкости</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+    <script src="~/Scripts/reservuary.js"></script>
+</body>
+</html>

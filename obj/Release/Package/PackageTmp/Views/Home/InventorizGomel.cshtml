@@ -1,0 +1,186 @@
+﻿@model IEnumerable<Reservuary.Models.InventoryM>
+@*@model IEnumerable<Reservuary.Models.tanks>*@
+
+@{
+    ViewBag.Title = "inventGomel";
+}
+
+<div id="ServicesModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content" id='ServicesModalContent'>
+
+        </div>
+    </div>
+</div>
+
+<div id="ServicesModalDelete" class="modal fade">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content" id='ServicesModalDeleteContent'>
+
+        </div>
+    </div>
+</div>
+
+
+<h3>Гомель</h3>
+<div>
+    <table>
+        <tr>
+            <td>
+                @*<input type="date" class="form-control btn-block" id="datapicker" />*@
+                <select class="form-control btn-block" id="datapicker1">
+                    <option selected value="0">Выберите дату</option>
+                    @foreach (var d in ViewBag.SelectDist)
+                    {
+                        @*<option value="@d"> @d.ToShortDateString()</option>*@
+                        <option value="@d"> @d</option>
+                    }
+                </select>
+            </td>
+            <td>
+                &nbsp;&nbsp;
+            </td>
+            <td>
+                <button type="submit" class="btn btn-info" style="min-width:100px" onclick="GetInventoryGomel()">Получить данные</button>
+            </td>
+            <td>
+                &nbsp;&nbsp;
+            </td>
+            
+            <td>
+                &nbsp;&nbsp;
+            </td>
+            <td>
+                <button type="submit" class="btn btn-info" style="min-width:100px" onclick="Report()">Отчет в PDF</button>
+            </td>
+        </tr>
+    </table>
+</div>
+<hr>
+<style type="text/css">
+    TH {
+        background: #EFF5FB; /* Цвет фона */
+        border-bottom: double;
+    }
+
+    tr:nth-child(odd) {
+        background: #EFF5FB; /* Цвет фона */
+    }
+
+    tr:nth-child(even) {
+        background: #ffffff; /* Цвет фона */
+    }
+</style>
+
+
+<div id="tab">
+
+
+    <table class="table">
+        <tr>
+            <th>
+                
+            </th>
+            <th>
+                
+            </th>
+            <th width="8%">
+                Дата
+            </th>
+            <th width="8%">
+                Пользователь
+            </th>
+            <th width="24%">
+                Резервуары
+            </th>
+            <th width="8%">
+                Общий уровень нефти, (мм)
+            </th>
+            <th width="8%">
+                Уровень подтоварной воды, (мм) 
+            </th>
+            <th width="8%">
+                Общий объём, (м<sup><i>3</i></sup>)
+            </th>
+            <th width="8%">
+                Объём подтоварной воды, (м<sup><i>3</i></sup>)
+            </th>
+            <th width="8%">
+                Объём нефти, (м<sup><i>3</i></sup>)
+            </th>
+            <th width="8%">
+                Минимально допустимый уровень, (мм)
+            </th>            
+            <th width="8%">
+                Минимально допустимый уровень, ( м<sup><i>3</i></sup>)
+            </th>
+            <th width="4%">
+                &nbsp;&nbsp;
+            </th>
+
+        </tr>
+    </table>
+    <div id="invent">
+    <table class="table" id="tabb">
+
+        @{
+            int u = 0;
+        }
+
+        @foreach (var item in ViewBag.inventGomel)
+        {
+            u++;
+            
+        <tr tr class="odd">
+            <td>
+                <input type="hidden" class="form-control btn-block" id="LocID_@u" value="@item.LocID">
+            </td>
+            <td>
+                <input type="hidden" class="form-control btn-block" id="ID_@u" value="@item.IDRez">
+            </td>
+            @*<td width="20%">
+            <input type="text" class="form-control btn-block" id="ID_@u" value="@item.TANKNAME">
+        </td>*@
+            <td width="8%">
+                @item.DateInv.ToShortDateString()
+                @*<input type="text" class="form-control btn-block" id="Uroven_@u" value="@item.Uroven" onkeyup="this.value = this.value.replace(/[^(0-9)(,)]/,'');">*@
+            </td>
+            <td width="8%">
+                @item.UserDC
+                @*<input type="text" class="form-control btn-block" id="Uroven_@u" value="@item.Uroven" onkeyup="this.value = this.value.replace(/[^(0-9)(,)]/,'');">*@
+            </td>
+            <td width="24%">
+                @item.tanks.tank_NAME
+            </td>
+            <td width="8%">
+                @item.Uroven                
+            </td>
+            <td width="8%">
+                @item.UrovH2O
+            </td>
+            <td width="8%">
+                     @item.V20           
+            </td>
+            <td width="8%">
+                @item.VH2O                
+            </td>
+            <td width="8%">
+                @item.V20                
+            </td>
+            <td width="8%">
+                @item.tanks.tech_min_mm
+            </td>
+            <td width="8%">
+                @item.tanks.techMinV
+            </td>
+            
+            <td width="4%">
+                <button type="button"  onclick="InventoryEdit(@item.ID)" class="btn btn-icon waves-effect waves-light btn-info"><span class="glyphicon glyphicon-pencil"></span></button>
+            </td>
+
+        </tr>
+        }
+    </table>
+        </div>
+</div>
+

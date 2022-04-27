@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище inventorModelContainer" CdmEntityContainer="inventorEntities">
+    <EntitySetMapping Name="bacup1">
+      <EntityTypeMapping TypeName="inventorModel.bacup1">
+        <MappingFragment StoreEntitySet="bacup1">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="tankid" ColumnName="tankid" />
+          <ScalarProperty Name="oillevel" ColumnName="oillevel" />
+          <ScalarProperty Name="oilvolume" ColumnName="oilvolume" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="calibration">
+      <EntityTypeMapping TypeName="inventorModel.calibration">
+        <MappingFragment StoreEntitySet="calibration">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="tankid" ColumnName="tankid" />
+          <ScalarProperty Name="oillevel" ColumnName="oillevel" />
+          <ScalarProperty Name="oilvolume" ColumnName="oilvolume" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="inventarizations">
+      <EntityTypeMapping TypeName="inventorModel.inventarizations">
+        <MappingFragment StoreEntitySet="inventarizations">
+          <ScalarProperty Name="invent_data" ColumnName="invent_data" />
+          <ScalarProperty Name="location_ID" ColumnName="location_ID" />
+          <ScalarProperty Name="tank_ID" ColumnName="tank_ID" />
+          <ScalarProperty Name="tank_NAME" ColumnName="tank_NAME" />
+          <ScalarProperty Name="inventory_NUM" ColumnName="inventory_NUM" />
+          <ScalarProperty Name="point" ColumnName="point" />
+          <ScalarProperty Name="ofice" ColumnName="ofice" />
+          <ScalarProperty Name="opc_TAG" ColumnName="opc_TAG" />
+          <ScalarProperty Name="value_m3" ColumnName="value_m3" />
+          <ScalarProperty Name="tech_min_mm" ColumnName="tech_min_mm" />
+          <ScalarProperty Name="tech_max_mm" ColumnName="tech_max_mm" />
+          <ScalarProperty Name="dirID_start" ColumnName="dirID_start" />
+          <ScalarProperty Name="dirID_end" ColumnName="dirID_end" />
+          <ScalarProperty Name="oil_level" ColumnName="oil_level" />
+          <ScalarProperty Name="DateTime" ColumnName="DateTime" />
+          <ScalarProperty Name="volume20" ColumnName="volume20" />
+          <ScalarProperty Name="temperature" ColumnName="temperature" />
+          <ScalarProperty Name="density" ColumnName="density" />
+          <ScalarProperty Name="volumeTrue" ColumnName="volumeTrue" />
+          <ScalarProperty Name="oilMass" ColumnName="oilMass" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InventoryM">
+      <EntityTypeMapping TypeName="inventorModel.InventoryM">
+        <MappingFragment StoreEntitySet="InventoryM">
+          <ScalarProperty Name="RezNum" ColumnName="RezNum" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="IDRez" ColumnName="IDRez" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Massa" ColumnName="Massa" />
+          <ScalarProperty Name="Vol" ColumnName="Vol" />
+          <ScalarProperty Name="UserDC" ColumnName="UserDC" />
+          <ScalarProperty Name="Plotnost" ColumnName="Plotnost" />
+          <ScalarProperty Name="Temper" ColumnName="Temper" />
+          <ScalarProperty Name="V20" ColumnName="V20" />
+          <ScalarProperty Name="Uroven" ColumnName="Uroven" />
+          <ScalarProperty Name="LocID" ColumnName="LocID" />
+          <ScalarProperty Name="UrovH2O" ColumnName="UrovH2O" />
+          <ScalarProperty Name="VH2O" ColumnName="VH2O" />
+          <ScalarProperty Name="DateInv" ColumnName="DateInv" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="lnch_directions">
+      <EntityTypeMapping TypeName="inventorModel.lnch_directions">
+        <MappingFragment StoreEntitySet="lnch_directions">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="sikn" ColumnName="sikn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="location">
+      <EntityTypeMapping TypeName="inventorModel.location">
+        <MappingFragment StoreEntitySet="location">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Podpisanty">
+      <EntityTypeMapping TypeName="inventorModel.Podpisanty">
+        <MappingFragment StoreEntitySet="Podpisanty">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="IDFilial" ColumnName="IDFilial" />
+          <ScalarProperty Name="Doljnost" ColumnName="Doljnost" />
+          <ScalarProperty Name="FIO" ColumnName="FIO" />
+          <ScalarProperty Name="Nazn" ColumnName="Nazn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="inventorModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tank_hour">
+      <EntityTypeMapping TypeName="inventorModel.tank_hour">
+        <MappingFragment StoreEntitySet="tank_hour">
+          <ScalarProperty Name="tank_ID" ColumnName="tank_ID" />
+          <ScalarProperty Name="DateTime" ColumnName="DateTime" />
+          <ScalarProperty Name="oLevel" ColumnName="oLevel" />
+          <ScalarProperty Name="oTemper" ColumnName="oTemper" />
+          <ScalarProperty Name="oDensRef" ColumnName="oDensRef" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tanks">
+      <EntityTypeMapping TypeName="inventorModel.tanks">
+        <MappingFragment StoreEntitySet="tanks">
+          <ScalarProperty Name="location_ID" ColumnName="location_ID" />
+          <ScalarProperty Name="tank_ID" ColumnName="tank_ID" />
+          <ScalarProperty Name="tank_NAME" ColumnName="tank_NAME" />
+          <ScalarProperty Name="inventory_NUM" ColumnName="inventory_NUM" />
+          <ScalarProperty Name="point" ColumnName="point" />
+          <ScalarProperty Name="ofice" ColumnName="ofice" />
+          <ScalarProperty Name="opc_TAG" ColumnName="opc_TAG" />
+          <ScalarProperty Name="value_m3" ColumnName="value_m3" />
+          <ScalarProperty Name="tech_min_mm" ColumnName="tech_min_mm" />
+          <ScalarProperty Name="tech_max_mm" ColumnName="tech_max_mm" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="dirID_start" ColumnName="dirID_start" />
+          <ScalarProperty Name="dirID_end" ColumnName="dirID_end" />
+          <ScalarProperty Name="techMinV" ColumnName="techMinV" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="getValByTable" FunctionName="Хранилище inventorModel.getValByTable" />
+    <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="Хранилище inventorModel.sp_alterdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="Хранилище inventorModel.sp_creatediagram" />
+    <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="Хранилище inventorModel.sp_dropdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="Хранилище inventorModel.sp_helpdiagramdefinition">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="inventorModel.sp_helpdiagramdefinition_Result">
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="Хранилище inventorModel.sp_helpdiagrams">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="inventorModel.sp_helpdiagrams_Result">
+          <ScalarProperty Name="Database" ColumnName="Database" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="Хранилище inventorModel.sp_renamediagram" />
+    <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="Хранилище inventorModel.sp_upgraddiagrams" />
+  </EntityContainerMapping>
+</Mapping>
